@@ -1,0 +1,500 @@
+/* ОБНУЛЕНИЕ ГРАНИЦ */
+* {
+ margin: 0;
+ padding: 0;
+}
+/* НАСТРОЙКИ ТЕКСТА */
+a {
+ text-decoration: none;
+}
+/* НАСТРОЙКИ СПИСКОВ */
+li {
+ list-style: none;
+}
+/* НАСТРОЙИ ТЕЛА САЙТА */
+body {
+ font-family: 'Open Sans', sans-serif;
+}
+header {
+ width: 100%;
+ background: #000;
+ display: flex;
+}
+
+
+
+/*НАСТРОЙКИ ШАПКИ*/
+.header_logo {
+ text-transform: uppercase;
+ color: #FFF;
+ font-weight: 800;
+ font-size: 24px;
+ cursor: pointer;
+ margin-top: 56px;
+ margin-left: 12%;
+}
+nav {
+  margin-top: 56px;
+  margin-left: 35%;
+}
+.topnav a {
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.topnav a:hover {
+  border-bottom: 3px solid #fcac45;
+}
+.topnav .icon {
+  display: none;
+}
+
+
+
+
+/* НАСТРОЙКА КОНТЕНТА БЛОГА */
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main .main_welcome {
+  background: #000;
+  text-align: center;
+  padding: 200px 0 410px 0;
+}
+main .main_welcome h1 {
+  font-weight: 400;
+  color: #909090;
+  font-size: 44px;
+}
+main .main_welcome p {
+  margin: 5px 20px;
+  color: #C9C9C9;
+  font-size: 20px;
+}
+main .main_welcome p b {
+  color: #D5D5D5;
+  font-size: 20px;
+}
+.mycompany {
+  font-weight: 800;
+  color: #fcac45;
+}
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+main .main_about {
+  display: flex;
+  padding: 100px 0px;
+}
+.about_left {
+  text-align: center;
+}
+.about_right {
+  margin-left: 175px;
+}
+.about_right h1 {
+  display: inline-block;
+  border-bottom: 3px solid #fcac45;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.about_right p {
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin: 30px 0 50px 0;
+  font-size: 18px;
+  color: #6c6c6c;
+}
+.about_right li {
+  background: url(../img/point.png) 0px no-repeat;
+  padding-left: 25px;
+  font-weight: bold;
+  color: #5c5c5c;
+  margin-top: 10px;
+}
+.about_list {
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+
+
+/* НАСТОЙКА СТРАНИЦЫ КОМАНДЫ*/
+.main_team {
+  background: #000;
+  text-align: center;
+  padding: 100px 0 165px 0;
+  color: #fff;
+}
+.main_team h1 {
+  font-size: 44px;
+  padding-bottom: 30px;
+}
+.line {
+  width: 100px;
+  height: 3px;
+  background: #fcac45;
+  margin-bottom: 85px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.photo {
+  background: #d7d7d7;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+.team_cards {
+  display: flex;
+}
+.card {
+  margin: 0 auto;
+}
+.name {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+.position {
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+.about_position {
+  padding: 0 20px;
+  font-size: 14px
+}
+
+
+
+
+/* НАСТРОЙКА СЕРВИСОВ */
+.services_cards {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+}
+.main_services {
+  margin: 0 auto;
+}
+.main_services h1 {
+  font-size: 44px;
+  text-align: center;
+  padding: 100px 0 30px 0;
+}
+.main_services p {
+  font-size: 18px;
+  text-align: center;
+  color: #6c6c6c;
+  margin-bottom: 100px;
+}
+.services_card h4 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.services_card p {
+  font-size: 16px;
+}
+
+
+
+
+/* НАСТРОЙКИ БЛОКА С КЛИЕНТАМИ*/
+.main_clients {
+  background: #000;
+  padding: 100px 0 205px;
+  color: #fff;
+  text-align: center;
+}
+.main_clients h1 {
+  font-size: 44px;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+.main_clients h1 span {
+  color: #fff;
+  font-weight: 400;
+}
+.main_clients img {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+
+
+
+/* НАСТРОЙКА ПОРТФОЛИО */
+.main_work {
+  text-align: center;
+  padding: 100px 0;
+}
+.main_work h1 {
+  font-size: 44px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.main_work p {
+  margin-bottom: 175px;
+  color: #6c6c6c;
+}
+.main_work img {
+  opacity: 0.8;
+  margin: 8px;
+  max-width: 100%;
+}
+.main_work img:hover {
+  opacity: 1;
+}
+
+
+
+/* НАСТРОЙКА БЛОКА ОТЗЫВОВ */
+.main_testimonials {
+  background: #000;
+  text-align: center;
+  color: #B3B3B3;
+  font-size: 18px;
+  font-weight: 900px;
+  text-decoration: uppercase;
+  padding-bottom: 170px;
+
+}
+.main_testimonials .testimonials {
+  text-decoration: uppercase;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+.main_testimonials h1 {
+  font-size: 44px;
+  margin-top: 100px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-decoration: uppercase;
+}
+.main_testimonials h1 span {
+  font-weight: 400;
+}
+.main_testimonials p span {
+  font-weight: 400;
+  color: #636363;
+}
+
+
+
+
+
+
+/* НАСТРОЙКА ФОРМЫ КОНТАКТЫ */
+.contact_from {
+  padding: 100px 0;
+}
+.contact_wrapper {
+  text-align: center;
+  width: 753px;
+  margin: 0 auto;
+  color: #636363;
+}
+.contact_wrapper h1 {
+  text-align: center;
+  color: #000;
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  margin-top:  100px;
+}
+.red {
+  color: red;
+}
+.from_inputs { 
+  margin-top: 100px;
+  display: flex;
+}
+
+form p {
+  text-align: left;
+}
+input {
+  width: 360px;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+input:first-of-type { /* Растояние между импутами */
+  margin-right: 30px;
+}
+textarea {
+  width: 100%;
+  height: 163px;
+  margin-top: 5px;
+}
+input, textarea {
+  border: 1px solid #999;
+}
+.button_block {
+  display: flex;
+  justify-content: flex-end;
+}
+.button_send {
+  width: 165px;
+  height: 40px;
+  background: #fcac45;
+  margin-right: 0;
+  margin-top: 30px;
+}
+
+
+
+
+
+/* НАСТРОЙКА ФУТТЕРА САЙТА */
+footer {
+  width: 100%;
+  height: auto;
+   background: #000;
+   padding: 30px 0;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social img {
+  margin-left: 12px;
+}
+.social img:hover {
+  opacity: 0.6;
+}
+
+
+
+/* АДАПТАЦИЯ САЙТА ПОД РАЗНЫЕ РАЗМЕРЫ ЭКРАНА*/
+@media screen and (max-width: 1415px) {
+  nav {
+    margin-left: 25%;
+  }
+  .wrapper {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1190px) {
+  nav {
+    margin-left: 15%;
+  }
+  .about_right {
+    margin-left: 75px;
+  }
+}
+@media screen and (max-width: 1035px) {
+  nav {
+    margin-left: 10%;
+  }
+  .mw-100 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  .main_about {
+    flex-direction: column;
+  }
+  .about_right {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .about_right li {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 960px) {
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    margin-top: -14px;
+    display: block;
+    color: #fff;
+    font-size: 25px;
+  }
+  nav {
+    width: 100%;
+  }
+
+
+  /*НАСТРОЙКА  АДАПТИВНОСТИ. МЕНЮ ВКЛЮЧЕНИЕ С БУРГЕР МЕНЮ */
+  .topnav.responsive { /* Настройка для размещения открытого  бургер  меню  под  логотипом*/
+    position: relative;
+    top: 50px;
+    left: -200px;
+  }
+  header .topnav.responsive {
+      height: 340px;
+  }
+  .topnav.responsive a.icon { /*Настройка местооложения  бургер меню */
+    position: absolute;
+    top: -50px;
+    right: -200px
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+
+
+  main .main_welcome {
+    padding: 50px 0 50px 0;
+  }
+  main .main_welcome p {
+    font-size: 14px;
+  }
+  main .main_welcome h1 {
+    font-size: 25px;
+  }
+
+
+  .about_right h1 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+
+
+  .team_cards {
+    flex-direction: column;
+  }
+
+  .services_cards {
+  grid-template-columns: auto;
+  }
+
+  .line1 img:not(:first-child) {
+    display: none;
+  }
+  .line2 img:not(:first-child) {
+    display: none;
+  }
+  .line3 img:not(:first-child) {
+    display: none;
+  }
+
+
+  .contact_wrapper {
+    max-width: 80%;
+  }
+  input{
+    width: 100%;
+  }
+
+  textarea {
+    max-width: 100%;
+  }
+}
