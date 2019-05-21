@@ -1,6 +1,7 @@
 .page	{ 
 	margin: 0;
-	 padding: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
 a	{ 
@@ -11,13 +12,23 @@ a	{
 li	{ 
 	list-style: none;
 }
+.gallery {
+	width: 100%;
+	height: 100vh;
+}
+
+
 
 header {
+	position: absolute;
+	top: 0;
 	height: 150px;
 	width: 100%;
 	text-align: center;
 	overflow: hidden;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Julius Sans One',	sans-serif;
+	background: rgba(255, 255, 255, 0.2);
+	background: #fff;
 }
 .header{
 	height: 100px;
@@ -25,9 +36,20 @@ header {
 	justify-content: space-between;
 	padding: 0 15%;
 	align-items: center;
-	font-weight: 600;
-	font-size: 24px;
+	font-weight: 700;
+	font-size: 28px;
 	overflow: hidden;
+}	
+.header .name {
+	text-shadow: 0 0 20px 5px rgba(#000, 0.3);
+}
+.header .name a {
+	text-decoration:none;
+	color: #000;
+}
+.header .name a:hover {
+	text-decoration:none;
+	color: #000;
 }
 .header .logo img	{
 	width: 100px;
@@ -37,16 +59,62 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-bottom: 2px solid #000;
 	border-top: 2px solid #000;
 	height: 50px;
-	font-family: 
 }
 nav div {
 	margin: 0 50px;
+	font-weight: 600
 	
 }
 nav div a {
 	text-decoration: none;
 	color: #000000;
+}
+nav div a:hover {
+	text-decoration: none;
+	color: blue;
+}
+
+
+.content {
+	width: 100%;
+	min-height: 768px;
+}
+
+
+
+footer {
+	position: absolute;
+	bottom: 0;
+	height: 60px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 32px;
+	background: #fff;
+}
+footer p { 
+	font-size: 16px;
+	font-weight: 600;
+}
+footer p a { 
+	text-decoration: none;
+	color: #000000;
+}
+footer p a:hover { 
+	text-decoration: none;
+	color: #000000;
+}
+footer .soc {
+	display: flex;
+	margin-left: 25px;
+}
+footer .soc div { 
+	margin-left: 15px;
+}
+footer .soc div:hover { 
+	color: #535353
 }
