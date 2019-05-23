@@ -12,15 +12,21 @@ a	{
 li	{ 
 	list-style: none;
 }
+/*
+	СТИЛИЗАЦИЯ ГАЛЕРЕИ
+	ГЛАВНАЯ СТРАНИЦА
+*/
+
 .gallery {
 	width: 100%;
 	height: 100vh;
 }
 
+/*
+	СТИЛИЗАЦИЯ ШАПКИ
+*/
 
 header {
-	position: absolute;
-	top: 0;
 	height: 150px;
 	width: 100%;
 	text-align: center;
@@ -76,12 +82,50 @@ nav div a:hover {
 }
 
 
+/*
+	СТИЛИЗАЦИЯ КОНТЕНТА 
+	ГЛАВНАЯ СТРАНИЦА
+*/
+
 .content {
 	width: 100%;
 	min-height: 768px;
 }
 
 
+
+/*
+	СТИЛИЗАЦИЯ ГАЛЕРЕИ
+*/
+/*
+	СТИЛИЗАЦИЯ CV
+*/
+
+/*
+	СТИЛИЗАЦИЯ ОБО МНЕ
+*/
+/*
+	СТИЛИЗАЦИЯ НОВОСТЕЙ
+*/
+/*
+	СТИЛИЗАЦИЯ СОНТАКТОВ
+*/
+.contact {
+	display: flex;
+	justify-content: center;
+}
+.contact .leftside {
+	width: 20%;
+	margin-right: 2.5%;
+}
+.contact .rightside {
+	width: 20%;
+	margin-left: 2.5%;
+}
+
+/*
+	СТИЛИЗАЦИЯ ПОДВАЛА
+*/
 
 footer {
 	position: absolute;
