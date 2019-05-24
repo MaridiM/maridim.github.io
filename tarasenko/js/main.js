@@ -1,4 +1,3 @@
-
 let gallery = document.querySelector('.gallery');
 let img = gallery.querySelectorAll('img');
 
