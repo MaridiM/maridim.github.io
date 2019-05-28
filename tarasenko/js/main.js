@@ -1,8 +1,8 @@
-let gallery = document.querySelector('.gallery');
-let img = gallery.querySelectorAll('img');
+let slider = document.querySelector('.slider');
+let img = slider.querySelectorAll('img');
 
 let el = 0;
-const slider = () => {
+const Slider = () => {
 	for (let i = 0; i < img.length; i++) {
 		img[i].style.display = 'none';
 	}
@@ -14,4 +14,4 @@ const slider = () => {
 	img[el].style.display = 'block';	
 }
 
-setInterval(slider, 10000);
+setInterval(Slider, 10000);

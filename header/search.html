@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	
+	<style>
+		/*#test{float:left;width:100px;height:100px;background:red;}*/
+		body {
+			display: flex;
+		}
+		.search-form  {
+			position: relative;
+			width: 0%;
+			height: 40px;
+			float: left;
+			overflow: hidden;
+		}
+		.search-form.open {
+			width: 782px;
+			overflow: hidden;
+		}
+		.search-form.open input {
+			opacity: 1;
+		}
+		.search-form input {
+			width: 712px;
+			height: 40px;
+			padding: 0 10px 0 50px;
+			border: none;
+			border-radius: 4px 0 0 4px;
+			box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.3);
+			font-size: 14px;
+			font-family: 'Roboto', sans-serif;
+		}
+		.search-form button {
+			width: 70px;
+			height: 40px;
+			margin-left: -4px;
+			padding-bottom: 1px;
+			color: #ffffff;
+			background:#FFC200;
+			border: none;
+			border-radius: 0 4px 4px 0;
+			box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.3);
+			outline: none;
+			cursor: pointer;
+		}
+		.search-form .icon-search {
+			position: absolute;
+			top: 6px;
+			left: 12px;
+			width: 28px;
+			height: 28px;
+			opacity: 0.2;
+		}
+		.search {
+			cursor: pointer;
+		}
+		
+	</style>
+
+	<div class="search-form">
+		<img class="icon-search" src="img/icons/search_black.png" alt="">
+			<input type="search" placeholder="Поиск">
+			<button>НАЙТИ</button>
+	</div>
+	<div class="search" ><img class="search-img" src="img/icons/search_black.png" alt=""></div>
+	
+<script src="js/classie.js"></script>
+<script src="js/uisearch.js"></script>
+<script>
+	new UISearch(document.querySelector('.search-form'));
+</script>
+	<script>
+		'use strict';
+		document.addEventListener('click', el => {
+			let search = document.querySelector('.search'),
+				searchImg = search.querySelector('.search-img').className,
+				searchForm = document.querySelector('.search-form'),
+				target = el.target.className;
+			
+			if (searchImg === target) {
+				searchForm.classList.add('open');
+				search.style.display = 'none';
+			}else if(!searchForm.contains(el.target)) {
+				searchForm.classList.remove('open');
+				search.style.display = 'block';
+			}else {
+				
+			}
+
+			
+
+
+			console.log(searchForm.contains(el.target))
+	
+		});
+		//document.addEventListener('click', function(event) {
+		//	var e=document.getElementById('test');
+		//	if (!e.contains(event.target)) e.style.display='none';
+		//});
+
+		//var $ = document.querySelector.bind(document);
+		//var form = $('.search-form');
+		//var changeFormState = function changeFormState() {
+		//var input = $('input');
+		//form.classList.toggle('open');
+		//if (form.className === 'open') input.focus();else input.value = '';
+		//};
+		//form.addEventListener('click', changeFormState);
+		//form.addEventListener('submit', function (e) {
+		//e.preventDefault();
+		//changeFormState();
+		//});
+	</script>
+</body>
+</html>

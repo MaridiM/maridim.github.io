@@ -1,8 +1,10 @@
 .page	{ 
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	width: 100%;
+	height: 100%;
 }
+
 
 a	{ 
 	text-decoration: none;
@@ -12,18 +14,9 @@ a	{
 li	{ 
 	list-style: none;
 }
-/*
-	СТИЛИЗАЦИЯ ГАЛЕРЕИ
-	ГЛАВНАЯ СТРАНИЦА
-*/
-
-.gallery {
-	width: 100%;
-	height: 100vh;
-}
 
 /*
-	СТИЛИЗАЦИЯ ШАПКИ
+СТИЛИЗАЦИЯ ШАПКИ
 */
 
 header {
@@ -83,22 +76,64 @@ nav div a:hover {
 
 
 /*
-	СТИЛИЗАЦИЯ КОНТЕНТА 
-	ГЛАВНАЯ СТРАНИЦА
+СТИЛИЗАЦИЯ КОНТЕНТА 
+ГЛАВНАЯ СТРАНИЦА
 */
-
-.content {
+.home	{ 
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.slider {
 	width: 100%;
-	min-height: 768px;
+	height: 100vh;
 }
 
 
 
 /*
-	СТИЛИЗАЦИЯ ГАЛЕРЕИ
+СТИЛИЗАЦИЯ ГАЛЕРЕИ
 */
+
+.gallery-page {
+	width: 100%;
+	min-height: 80%;
+	height: 100%;
+}
+.gallery-page .gallery {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 30px 5% 50px 5%
+}
+.gallery-page .gallery .item {
+	margin: 5px;
+}
+.gallery-page .category {
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+.gallery-page .category button {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	margin: auto 15px;
+	background: #fff;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	color: #535353;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+	text-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.3);
+	padding: 7px 15px 5px 15px;
+}
+.gallery-page .category button:hover {
+	
+}
+
 /*
-	СТИЛИЗАЦИЯ CV
+СТИЛИЗАЦИЯ CV
 */
 
 /*
@@ -110,26 +145,26 @@ nav div a:hover {
 /*
 	СТИЛИЗАЦИЯ СОНТАКТОВ
 */
-.contact {
+.contact-page {
 	display: flex;
 	justify-content: center;
 	padding-top: 50px;
 }
-.contact .leftside {
+.contact-page .leftside {
 	width: 20%;
 	margin-right: 5%;
 	text-align: left;
 	text-indent: 25px;
 }
-.contact .rightside {
+.contact-page .rightside {
 	width: 20%;
 	text-align: center;
 	padding-top: 12.5px;
 }
-.contact .rightside form {
+.contact-page .rightside form {
 	width: 100%;
 }
-.contact .rightside input, textarea {
+.contact-page .rightside input, textarea {
 	width: 90%;
 	padding: 10px;
 	border-radius: 5px;
@@ -139,10 +174,10 @@ nav div a:hover {
 	border: none;
 	box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.3)
 }	
-.contact .rightside input:focus, textarea:focus  {
+.contact-page .rightside input:focus, textarea:focus  {
 	outline: none;
 }	
-.contact .rightside button {
+.contact-page .rightside button {
 	width: 100px;
 	height:30px;
 	line-height: 29px;
@@ -154,12 +189,15 @@ nav div a:hover {
 	box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
 	margin: 10px auto 0 auto;
 }
+.contact-page .success {
+	display: none;
+}
 /*
 	СТИЛИЗАЦИЯ ПОДВАЛА
-*/
-
+	*/
+	
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	height: 60px;
 	width: 100%;
@@ -191,4 +229,8 @@ footer .soc div {
 }
 footer .soc div:hover { 
 	color: #535353
+}
+.footer-home {
+	position: absolute;
+	bottom: 0;
 }

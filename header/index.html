@@ -16,62 +16,72 @@
 			<div class="logo-mob"><img src="img/logo.png" alt=""></div>
 			<div class="search-mob"><img src="img/icons/search-icon.png" alt=""></div>
 		</div>
-		
 		<nav class="nav">
 			
-			<div class="item"><a href="#">Ссылки<span><img src="img/icons/list-Menu.png" alt=""></span></a></div>
+			<!--<div class="item"><a href="#">Ссылки<span><img src="img/icons/list-Menu.png" alt=""></span></a></div>
 			<div class="item"><a href="#">Контакты</a></div>
 			<div class="item"><a href="#">Теги<span><img src="img/icons/list-Menu.png" alt=""></span></a></div>
 			<div class="item"><a href="#">Просьбы<span><img src="img/icons/list-Menu.png" alt=""></span></a></div>
 			<div class="item"><a href="#">Избранное<span><img src="img/icons/list-Menu.png" alt=""></span></a></div>
 			<div class="item"><a href="#">Посещения<span><img src="img/icons/list-Menu.png" alt=""></span></a></div>
 			<div class="search"><img src="img/icons/search-icon.png" alt=""></div>
-			<!--
+			
 			<div class="search-form">
-				<img class="icon-search" src="img/icons/search_black.png" alt="">
-				<img class="icon-close" src="img/icons/close_black.png" alt="">
-
+				
 				<input type="search" id="search" placeholder="Поиск">
-
+				
 				<button>НАЙТИ</button>
 			</div>
-
-
-			<div class="search-modal">
-				<div class="autor">
-					<div>
-						<div class="checkbox" id="meAutorCheck"></div>
-						<div class="label">Мои</div>
-					</div>
-					<input type="text" id="autor" placeholder="Автор">
+		-->
+			<div class="search-form">
+				<div id="sb-search" class="sb-search">
+					<form>
+						<img class="icon-search" src="img/icons/search_black.png" alt="">
+						<img class="icon-close" src="img/icons/close_black.png" alt="">
+						
+						<input class="sb-search-input" placeholder="Что будет искать?" type="search" value="" name="search"
+							id="search">
+						<input class="sb-search-submit" type="submit" value="">
+						<span class="sb-icon-search">НАЙТИ</span>
+					</form>
 				</div>
-
-				<div class="sort">
-					<div class="label"><b>Сортировать по:</b></div>
-					<select id="sortData">
-						<option>Дате</option>
-						<option>Популярности</option>
-						<option>Релевантности</option>
-					</select>
-				</div >
-
-				<div class="variant">
-					<div>
-						<div class="checkbox" id="participant"></div>
-						<div class="label" >я учасник</div>
-					</div>
-					<div>
-						<div class="checkbox active" id="title">
-							<img class="check" src="img/icons/check_white.png" alt="">
+				
+				<div class="search-modal">
+					<div class="autor">
+						<div>
+							<div class="checkbox" id="meAutorCheck"></div>
+							<div class="label">Мои</div>
 						</div>
-						<div class="label" >в заголовке</div>
+						<input type="text" id="autor" placeholder="Автор">
 					</div>
-					<div>
-						<div class="checkbox" id="strict"></div>
-						<div class="label" >строгий список</div>
+
+					<div class="sort">
+						<div class="label"><b>Сортировать по:</b></div>
+						<select id="sortData">
+							<option>Дате</option>
+							<option>Популярности</option>
+							<option>Релевантности</option>
+						</select>
+					</div >
+
+					<div class="variant">
+						<div>
+							<div class="checkbox" id="participant"></div>
+							<div class="label" >я учасник</div>
+						</div>
+						<div>
+							<div class="checkbox active" id="title">
+								<img class="check" src="img/icons/check_white.png" alt="">
+							</div>
+							<div class="label" >в заголовке</div>
+						</div>
+						<div>
+							<div class="checkbox" id="strict"></div>
+							<div class="label" >строгий список</div>
+						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 			<div class="plus"><img src="img/icons/plus-icon.png" alt=""></div>
 		</nav>
 		<div class="profile">
@@ -85,7 +95,14 @@
 	</header>
 
 	
-
 	<script src="js/main.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/uisearch.js"></script>
+	<script>
+		new UISearch(document.getElementById('sb-search'));
+
+		
+	</script>
+
 </body>
 </html>
