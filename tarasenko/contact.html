@@ -37,12 +37,18 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex atque fugit quibusdam error incidunt consequatur ullam eveniet corporis? Soluta quam doloribus nihil, id assumenda, rem illo minima pariatur magnam sint labore maiores repudiandae tempora quidem itaque, deleniti placeat nesciunt? Id! orem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam consectetur corporis illo exercitationem dicta saepe. Nesciunt iusto doloremque placeat, impedit, dolores sunt voluptates atque, corporis asperiores explicabo repudiandae? Dignissimos, reprehenderit?</p>
 		</div>
 		<div class="rightside">
-			<form class="callback" action="mail.php" method="POST">
-				<div class="success"><span>Спасибо за заявку!</span></div>
-				<input type="text" name="name" placeholder="Your name" required><br>
-				<input type="email" name="email" placeholder="Your email" required><br>
-				<input type="text" name="subject" placeholder="Your subject" required><br>
-				<textarea name="message"  rows="5" placeholder="Your message" required></textarea><br>
+			<form>
+
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Tetiana Tarasenko">
+				<input type="hidden" name="admin_email" value="maridim92@gmail.com">
+				<input type="hidden" name="form_subject" value="New message from web site Tetiana Tarasenko">
+				<!-- END Hidden Required Fields -->
+
+				<input type="text" name="Name" placeholder="Your name" required><br>
+				<input type="email" name="Email" placeholder="Your email" required><br>
+				<input type="text" name="Subject" placeholder="Your subject" required><br>
+				<textarea name="Message"  rows="5" placeholder="Your message" required></textarea><br>
 				<button name="send">SEND</button>
 			</form>
 		</div>
@@ -57,7 +63,9 @@
 
 	</footer>
 
-	<script src="js/contact.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/script.js"></script>
+	
 </body>
 
 </html>
