@@ -185,6 +185,84 @@ nav div a:hover {
 }
 
 
+.modal {
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    background: #F0F0F0;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+
+}
+.modal .close {
+    position: absolute;
+    right: 3%;
+    top: 4%;
+}
+.modal .close i {
+    font-size: 30px; 
+    opacity: 0.4;
+}
+.modal .close i:hover {
+    opacity: 0.7;
+}
+.modal .next {
+    margin-top: -30px;
+    position: absolute;
+    right: 1.5%;
+    top: 50%;
+}
+.modal .last {
+    margin-top: -30px;
+    position: absolute;
+    left: 1.5%;
+    top: 50%;
+}
+.modal .last, .next i {
+    font-size: 90px; 
+    opacity: 0.4;
+}
+.modal .last i:hover, .next i:hover {
+    opacity: 0.7;
+    color: #000;
+}
+.modal img {
+    margin-top:0.75%;
+    width: 97%;
+    height: 97%;
+    border-radius: 10px;
+    box-shadow: inset 0 0 25px 25px rgba(0, 0, 0, 0.5);
+}
+.modal .info {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    max-width: 30%;
+    max-height: 30%;
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    margin-top: 0.75%;
+    margin-left: 1.5%;
+    border-radius: 10px 0 5px 0;
+    padding: 5px 15px 25px 15px;
+}
+.modal .info  div {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;
+
+}
+.modal .info  div h2 {
+    margin-bottom: 25px;
+
+}
+.modal .info  div p {
+    margin: 0 20px 0 0;
+}
 
 /*
 СТИЛИЗАЦИЯ CV

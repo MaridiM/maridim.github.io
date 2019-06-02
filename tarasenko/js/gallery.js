@@ -288,6 +288,8 @@ const Gallery = () => {
 	
 	
 	for(let i = 0; i < items.length; i++) {
+		
+		// Создание  самой галереи  в  и блоков  с картинками и текста
 		let item = document.createElement('div');
 			item.className = 'item';
 			item.classList.add('all');
@@ -327,18 +329,29 @@ const Gallery = () => {
 			img.src = `img/gallery/${items[i].image}`;
 			
 			
-
+		// При наведении мышки  затемнение и вывод  текста
 					
 		item.addEventListener('mouseover',  el => {
 			info.style.display = 'block';
 			img.style.opacity = 0.1;
-		})
+		});
 		
 		item.addEventListener('mouseout',  el => {
 			info.style.display = 'none';
 			img.style.opacity = 1;
-		})
+		});
+
+		// Нажатие на картинку или айтем
+
+		item.addEventListener('click', el => {
+			let modal = document.querySelector('.modal');
+			console.log(modal);
+		});
+
+
 	}
+
+	//Создание Кнопки категорий и подставление текста  из JSON
 	for (let i = 0; i < category.length; i++ ) {
 		let categoryBlock = document.querySelector('.category');
 
