@@ -1,0 +1,321 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Суши на Дом</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+	<div class="page">
+		<header id="header">
+			<div class="owl-carousel owl-header">
+				<img src="img/bg/bg.png"   alt="Заказать суши на дом">
+				<img src="img/bg/bg_1.png" alt="Заказать суши на дом">
+				<img src="img/bg/bg_2.png" alt="Заказать суши на дом">
+				<img src="img/bg/bg_3.png" alt="Заказать суши на дом">
+				<img src="img/bg/bg_4.png" alt="Заказать суши на дом">
+				<img src="img/bg/bg_5.png" alt="Заказать суши на дом">
+				<img src="img/bg/bg_6.png" alt="Заказать суши на дом">
+			</div> <!-- .owl-header .owl-carousel -->
+			<div class="top_line">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-md-9 col-sm-8">
+							<nav class="nav" id="myNav">
+								<a href="#header">Главная</a>
+								<a href="#gallery">Галерея</a>
+								<a href="#shop">Меню</a>
+								<a href="#personal">Сушисты</a>
+								<a href="#comment">Отзывы</a>
+								<a href="#contact">Контакты</a>
+							</nav><!-- .nav -->
+						</div> <!-- .col-md-10 -->
+
+						<div class="col-lg-3 col-md-3 col-sm-4">
+							<nav class="soc">
+								<div class="soc-icon"><a href="https://www.facebook.com/maridim92" alt="Заказать суши на дом" title="Facebook" target="blank"><i class="fab fa-facebook-f"></i></a></div>
+								<div class="soc-icon"><a href="https://www.instagram.com/dmitriymarynenko" alt="Заказать суши на дом" title="Instagram" target="blank"><i class="fab fa-instagram"></i></a></div>
+								<div class="soc-icon"><a href="https://www.vk.com/maridim92" alt="Заказать суши на дом" title="VK"><i class="fab fa-vk" target="blank"></i></a>
+							</nav> <!-- .soc -->
+						</div> <!-- .col-md-2 -->
+				
+					</div> <!-- .row -->
+				</div> <!-- .container -->
+				<div class="toggle">
+					<span></span>
+				</div>
+				<div class="shoping-basket">
+					<a href="#basket" alt="Корзина заказов"><i class="fas fa-shopping-basket"></i></a>
+					<div class="basket-order">2</div> 
+				</div> <!-- .shoping-basket -->
+
+				<!-- MODAL BASKET -->
+				<div class="basket" id="basket">
+					<h1>Ваш заказ</h1>
+					<a href="index.html#shop"><i class="fas fa-times exit" id="exit"></i></a>
+					<div class="order">
+						<div class="order-block">
+							<div class="order-img">
+								<img src="img/menu/nigiri.png" alt="Заказать суши на дом">
+							</div> <!-- .order-img -->
+				
+							<div class="order-info">
+								<div class="name">НИГИРИ С КРАСНЫМ ОКУНЕМ</div>
+								<div class="info">Рис, лосось, васаби, имбирь, соевый соус</div>
+							</div> <!-- .order-info -->
+				
+							<div class="order-price">
+								<div class="quantity">
+									<input type="text" name="quantity" id="quantity" value="1"><label for="quantity">шт.</label>
+								</div> <!-- .order-price -->
+								<div class="price">100 грн</div> <!-- .order-price -->
+							</div> <!-- .order-quantity -->
+				
+						</div> <!-- .order-block -->
+						<i class="fas fa-times delete" id="delete"></i>
+					</div> <!-- .order -->
+				
+				
+					<div class="send-order">
+						<div class="cart-item-button">
+							<a href="#order-form">
+								<div class="button">Заказать</div>
+							</a> <!-- .button -->
+						</div> <!-- .cart-item-button -->
+						<div class="sum">100 грн</div>
+					</div><!-- .send-order -->
+				</div> <!-- .basket -->
+
+				<!-- MODAL ORDER FORM-->
+				<div class="order-form" id="order-form">
+					<a href="index.html#shop"><i class="fas fa-times exit" id="exit"></i></a>
+					<h1>ОФОРМИТЬ ЗАКАЗ</h1>
+					<form action="send-order.php" method="POST" name="order-form">
+						<!--<h3>Личные данные</h3>-->
+						<input class="input" type="text" name="name" placeholder="Введите Имя" required> <br>
+						<!--<input class="input" type="text" name="sName" placeholder="Введите Фамилию"> <br>-->
+						<!--<h3>Контактные данные</h3>-->
+						<input class="input" type="text" name="email" placeholder="Введите эл.почта" required><br>
+						<input class="input" type="text" name="phone" placeholder="Введите номер телефона" required><br>
+						<!--<h3>Адресс доставки</h3>-->
+						<!--<input class="input" type="text" name="adressState" placeholder="Введите область"><br>-->
+						<!--<input class="input" type="text" name="adressCity" placeholder="Введите город"><br>-->
+						<input class="input" type="text" name="adressStreet" placeholder="Введите улица, дом/кв" required><br>
+						<a href="#basket">НАЗАД</a>
+						<input type="submit" class="button" value="ЗАКАЗАТЬ"></input>
+					</form> <!-- .order-form -->
+				</div>
+
+
+
+
+			</div> <!-- .top_line -->
+
+				<div class="logo">
+				<img src="img/logo_black.png" alt="Заказать суши на дом">
+			</div> <!-- .logo-->
+
+			<div class="bottom_line">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-6 col-md-6 col-6"><i class="fa fa-location-arrow"></i>г.Тернополь</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-6"><i class="fa fa-mobile-alt"></i>+380970005433</div>
+						<div class="col-lg-5 "><i class="fa fa-clock"></i>Время работы с 10-00 до 22-00</div>
+					</div> <!-- .row -->
+				</div>	<!-- container. -->
+			</div> <!-- .bottom_line -->
+		</header>
+
+		<!--  GALLERY BLOCK -->
+		<section class="s-gallery" id="gallery">
+			<div class="owl-carousel owl-gallery">
+				<img src="img/galery/1.png" alt="Заказать суши на дом">
+				<img src="img/galery/2.png" alt="Заказать суши на дом">
+				<img src="img/galery/3.png" alt="Заказать суши на дом">
+				<img src="img/galery/4.png" alt="Заказать суши на дом">
+				<img src="img/galery/5.png" alt="Заказать суши на дом">
+				<img src="img/galery/6.png" alt="Заказать суши на дом">
+				<img src="img/galery/7.png" alt="Заказать суши на дом">
+				<img src="img/galery/8.png" alt="Заказать суши на дом">
+			</div> <!-- .owl-header .owl-carousel -->
+		</section> <!-- .s-gallery -->
+		
+
+		<!--  SHOP BLOCK -->
+		<section class="s-shop" id="shop">
+			<h1>МЕНЮ</h1>
+			<div class="cart">
+				<div class="cart-grid">
+					<div class="cart-item">
+						<div class="cart-item-name"><h3>Маки с лососем</h3></div><!-- .item-cart-name -->
+						<div class="cart-item-img"><img src="img/menu/maki.png" alt="Заказать суши на дома"></div><!-- .item-cart-img -->
+						<div class="cart-item-content"><p>Рис, лосось, васаби, имбирь, соевый соус</p></div><!-- .item-cart-content -->
+						<div class="cart-item-gram"><p>60г</p></div><!-- .item-cart-gram -->					
+						<div class="cart-item-price"><p>50 грн</p></div><!-- .item-cart-price -->						
+						<div class="cart-item-button"><div class="button">В корзину</div></div><!-- .item-cart-button -->
+					</div> <!-- .item-cart -->
+
+				</div> <!-- .cart-grid -->	
+			</div> <!-- .cart -->
+			<div class="line"></div> <!-- .line -->
+		</section> <!-- .s-menu -->
+		
+
+		<!--  PERSONAL BLOCK -->
+		<section class="s-personal" id="personal">
+			<h1>СУШИСТЫ</h1>
+			<div class="personal">
+
+					<div class="personal-card">
+						<img src="img/sushost.jpg" alt="Заказать суши на  дом">
+						<div class="personal-info">
+							<h2>Дмитрий Мариненко</h2>
+							<p>Шеф-повар<br> 
+							26 лет. опыт работы 5 лет</p>
+						</div> <!-- .personal-info -->
+					</div> <!-- .personal-card -->
+
+					<div class="personal-card">
+						<img src="img/sushost.jpg" alt="Заказать суши на  дом">
+						<div class="personal-info">
+							<h2>Дмитрий Мариненко</h2>
+							<p>Шеф-повар<br>
+								26 лет. опыт работы 5 лет</p>
+						</div> <!-- .personal-info -->
+					</div> <!-- .personal-card -->
+
+					<div class="personal-card">
+						<img src="img/sushost.jpg" alt="Заказать суши на  дом">
+						<div class="personal-info">
+							<h2>Дмитрий Мариненко</h2>
+							<p>Шеф-повар<br>
+								26 лет. опыт работы 5 лет</p>
+						</div> <!-- .personal-info -->
+					</div> <!-- .personal-card -->
+					<div class="personal-card">
+						<img src="img/sushost.jpg" alt="Заказать суши на  дом">
+						<div class="personal-info">
+							<h2>Дмитрий Мариненко</h2>
+							<p>Шеф-повар<br>
+								26 лет. опыт работы 5 лет</p>
+						</div> <!-- .personal-info -->
+					</div> <!-- .personal-card -->
+					
+					<div class="personal-card">
+						<img src="img/sushost.jpg" alt="Заказать суши на  дом">
+						<div class="personal-info">
+							<h2>Дмитрий Мариненко</h2>
+							<p>Шеф-повар<br>
+								26 лет. опыт работы 5 лет</p>
+						</div> <!-- .personal-info -->
+					</div> <!-- .personal-card -->
+
+			</div> <!-- .personal-->
+			<div class="line"></div> <!-- .line -->
+		</section> <!-- .s-personal -->
+
+
+		<!--  COMMENTARY BLOCK -->
+		<section class="s-comment" id="comment">
+			<h1>ОТЗЫВЫ</h1>
+			<div class="owl-carousel owl-comment">
+				<div class="owl-comment-item">
+					<h2>Марина Фролова</h2>
+					<p>Прекрасный в Суши Профи сервис обслуживания ! Спасибо огромное за то,что всегда своевременно
+					доставка заказа! Заказываю только у Вас,потому что всегда свежие роллы и порции большие!
+					Желаю ,чтобы клиентов было еще больше! Вас очень сложно поменять на других!</p>
+				</div><!-- .owl-comment-item-->
+
+				<div class="owl-comment-item">
+					<h2>Арнольд Маркевич</h2>
+					<p>Прекрасный в Суши Профи сервис обслуживания ! Спасибо огромное за то,что всегда своевременно
+						доставка заказа! Заказываю только у Вас,потому что всегда свежие роллы и порции большие!
+						Желаю ,чтобы клиентов было еще больше! Вас очень сложно поменять на других!</p>
+				</div><!-- .owl-comment-item-->
+			</div><!-- .owl-carousel .owl-comment-->
+			<div class="line"></div> <!-- .line -->
+		</section> <!-- .s-comment-->
+
+
+		<!--  CONTACT BLOCK -->
+		<section class="s-contact" id="contact">
+			<div class="contact">
+				
+				<div class="contact-form">
+					<h1>Контакты</h1>
+					<form action="send.php" method="POST" name="Send Message">
+						<input class="input" type="text" name="name" placeholder="Введите Имя"> <br>
+						<input class="input"  type="text" name="email" placeholder="Введите эл.почта"><br>
+						<textarea class="textarea" type="text" name="message" placeholder="Введите сообщение"></textarea><br>
+						<input type="submit" class="button"></input>
+					</form>
+				</div><!-- .contact-form -->
+
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d49245.17963302807!2d25.55776853211963!3d49.5575525082626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1545960938010"
+				 frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div><!-- .map-->
+
+			</div><!-- .contact -->
+			<div class="line"></div> <!-- .line -->
+		</section><!-- .s-contact-->
+		
+
+		<!--  FOOTER BLOCK -->
+		<footer>
+			<div class="footer">
+				<div class="footer-nav">
+					<div><a href="#header" alt="Главная">Главная</a></div>
+					<div><a href="#gallery" alt="Галерея">Галерея</a></div>
+					<div><a href="#shop" alt="Меню">Меню</a></div>
+					<div><a href="#personal" alt="Сушисты">Сушисты</a></div>
+					<div><a href="#comment" alt="Отзывы">Отзывы</a></div>
+				</div> <!-- .footer-nav--->
+				<div class="footer-contact">
+						<p><i class="fas fa-location-arrow"></i>г.Тернополь</p>
+						<p><i class="far fa-clock"></i>Время работы с 10-00 до 22-00</p>
+						<p><i class="fas fa-mobile-alt"></i>+380970005433</p>
+						<p><i class="fas fa-envelope"></i>maridim92@gmail.com</p>
+				</div> <!-- .footer-contact-->
+			</div> <!-- .footer -->
+			<div class="copyright">Dmitriy Marynenko &copy; 2018 MaridiM</div>	
+			<div class="soc">
+			<a href="https://www.facebook.com/maridim92" alt="Заказать суши на дом" title="Facebook" target="blank"><i
+					 class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/dmitriymarynenko" alt="Заказать суши на дом" title="Instagram"
+				 target="blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.vk.com/maridim92" alt="Заказать суши на дом" title="VK"><i class="fab fa-vk"
+					 target="blank"></i></a>
+			</div> <!-- .soc -->
+		</footer>
+		
+
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

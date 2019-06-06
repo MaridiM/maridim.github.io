@@ -1,0 +1,725 @@
+@import "_vars"
+@import "_fonts"
+@import "_libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+h2, h3, h4, h5, h6
+	font-family: raleway 
+h1
+	font-size: 60px
+	font-family: firasans, raleway 
+	font-weight: 400
+	margin-bottom: 55px
+	margin-top: 25px
+	padding-left: 15px
+	padding-right: 15px
+	display: inline-block
+	border-bottom: 5px solid $accent
+	text-align: center
+	text-shadow: 3px 3px 10px rgba($dark, .45)
+
+a
+	text-decoration: none
+	color: #000
+li
+	list-style: none
+
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 11px 40px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 15px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	box-shadow: 0 2px 2px darken($accent, 20%)
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 7%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+.line
+	margin: auto
+	margin-bottom: 15px	
+	background: rgba(#fff, .1)
+	box-shadow: 10px 10px 20px rgba($dark, .7)
+	width: 90%
+	height: 2px;
+
+
+//СТИЛИЗАЦИЯ ШАПКИ
+header
+	width: 100%
+	max-height: 100vh
+	position: relative
+	//background-color: #000
+	.nav
+		display: flex
+		font-family: raleway
+		font-size: 20px
+		justify-content: center
+		a
+			margin: 22px 20px
+			font-family: raleway
+			color: #ffffff
+			&:hover
+				color: $accent
+				text-decoration: none
+				padding-bottom: 5px
+				border-bottom: 2px solid $accent
+
+    
+				
+	.top_line
+		background-color: rgba($dark, .6)
+		height: 80px
+		width: 100%
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 2
+		.soc
+			display: flex
+			&-icon 
+				background-color: rgba(#666, .3)
+				border-radius: 50%
+				width: 32px
+				height: 32px
+				text-align: center
+				line-height: 32px
+				margin: 22px 10px			
+				a
+					color:  rgba(#fff, .7)
+					&:hover
+						color: rgba(#fff, 1)
+				&:hover
+					background-color: rgba(#666, .5)
+
+		.shoping-basket
+			position: absolute
+			top: 22px
+			left: 90%
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 90px
+			height: 40px
+			i
+				color: $accent
+				font-size: 40px
+				&:hover
+					color: rgba($accent, .85)
+			.basket-order
+				color: rgba($accent, 1)
+				font-size: 30px
+				margin-left: 10px
+			
+
+	.toggle
+		transform: translate(-50%,-50%)
+		width: 30px		
+		height: 30px
+		border-radius: 3px
+		cursor: pointer
+		display: none
+
+		span
+			position: absolute
+			width: 25px
+			height: 2.5px
+			display: block
+			background-color: #ffffff
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			box-shadow: 0 3px 3px rgba(0,0,0,.3)
+			border-radius: 2px
+			transition: .05
+			transition-delay: .05
+			&:before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				background-color: #ffffff
+				display: block
+				top: -7px
+				left: 0
+				border-radius: 2px
+				box-shadow: 0 3px 3px rgba(0,0,0,.3)
+				transition-property: top
+				transition-delay: .05
+				transition-duration: .05
+			&:after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				background-color: #ffffff
+				display: block
+				top: 7px
+				left: 0
+				border-radius: 2px
+				box-shadow: 0 3px 3px rgba(0,0,0,.3)
+				transition-property: top
+				transition-delay: .05
+				transition-duration: .05
+	.active
+		span
+			background-color: transparent
+			box-shadow: 0 3px 3px rgba(0,0,0,0)
+			&:before
+				top: 0
+				transform: rotate(45deg)
+				transition-delay: .05
+			&:after
+				top: 0
+				transform: rotate(-45deg)
+				transition-delay: .05	
+	
+
+
+	
+	.logo
+		z-index: 1
+		position: absolute
+		top: 150px
+		left: 100px
+		img
+			height: 175px
+			width: 245px
+
+	.bottom_line
+		background-color: rgba($dark, .6)
+		text-align: center
+		font-size: 16px
+		height: 80px
+		width: 100%
+		position: absolute
+		bottom: 0
+		left: 0
+		z-index: 1
+		color: #fff
+		padding-top: 27px
+		font-family: FiraSans
+		letter-spacing: 2px
+		div
+			&:nth-child(1)
+				text-align: left
+			&:nth-child(2)
+				text-align: center
+			&:nth-child(3)
+				text-align: right
+		.fa
+			color: rgba(#808080, .9)
+			font-size: 14px
+			padding-right: 10px
+	
+	.owl-header
+		img
+			width: 100%
+			max-height: 100vh 
+		
+
+// СТИЛИЗАЦИЯ КАРУСЕЛИ ГАЛЕРЕИ
+.owl-gallery
+	border-top: 7.5px solid $dark
+	border-bottom: 7.5px solid $dark
+	img
+		width: 100%
+		height: auto
+
+// СТИЛИЗАЦИЯ СУШИ МЕНЮ САЙТА
+	/* НАСТРОЙКА КНОПКИ */
+.s-shop
+	width: 100%
+	height: auto
+	text-align: center
+	.cart
+		margin-bottom: 75px
+		&-grid
+			display: grid
+			grid-template-columns: repeat(5, 300px)
+			grid-row-gap: 50px
+			grid-column-gap: 50px
+			justify-content: center
+		&-item
+			max-width: 300px
+			height: 460px
+			padding: 15px
+			border: 1px solid rgba($dark, .05)
+			box-shadow: 0px 0px 10px rgba($dark, .16)
+			border-radius: 10px
+			text-align: center
+			&:hover
+				background-color: darken(#fff, 3%)
+			&-name
+				font-size: 16px 
+				font-wight: 400
+				text-shadow: 3px 3px 6px rgba($dark, .25)
+			&-img
+				img
+					width: 200px
+					height: 153px
+			&-content
+				margin: 5px 25px
+				font-size: 16px
+			&-gram
+				font-weight: 600
+				font-size: 18px
+			&-price
+				font-weight: 800
+				font-size: 20px
+
+
+//СТИЛИЗАЦИЯ БЛОКА ПЕРОСОНАЛА
+.s-personal
+	width: 100%
+	height: auto
+	text-align: center
+	.personal
+		display: flex
+		justify-content: center 
+		flex-wrap: wrap
+		margin-bottom: 50px
+		&-card
+			max-width: 450px
+			height: auto
+			border-radius: 25px
+			position: relative
+			margin: 50px
+			box-shadow: 0 0 30px #000
+			img
+				width: 100%
+				height: 100%
+				border-radius: 25px
+		&-info
+			background-color: rgba(#000, .5)
+			color: #ffffff
+			text-align: center
+			font-family: firasans, sans-serif
+			border-bottom-left-radius: 25px 
+			border-bottom-right-radius: 25px
+			width: 100%
+			height: 25%
+			position: absolute
+			bottom: 0
+			padding-top: 15px
+			h2
+				font-size: 26px 
+			p
+				font-size: 16px
+				
+
+//СТИЛИЗАЦИЯ БЛОКА С ОЗЫВАМИ
+.s-comment
+	width: 100%
+	height: auto
+	text-align: center
+	.owl-comment
+		margin-top: 50px
+		margin-bottom: 100px
+		&-item
+			width: 1000px
+			margin: auto
+			font-family: raleway
+			color: #000
+			h2
+				font-size: 36px
+				font-weight: 300
+				text-shadow: 0 0 2px #000
+				margin-bottom: 25px
+			p
+				font-style: italic
+				font-size: 22px
+				color: #808080
+// СТИЛИЗАЦИЯ КОНТАТОВ
+.s-contact
+	width: 100%
+	height: auto
+	font-family: firasans, sans-serifs
+	.contact
+		display: flex
+		justify-content: center
+		margin: 90px auto
+		width: 90%
+		flex-wrap: wrap
+		&-form
+			text-align: center
+			margin: 20px
+			h1
+				font-size: 50px
+				margin-bottom: 40px
+				margin-top: 0
+				padding: 0 15px
+				display: inline-block
+				border-bottom: 5px solid $accent
+				text-shadow: 3px 3px 10px rgba($dark, .45)
+			.input
+				font-size: 18px
+				height: 75px
+				min-width: 500px
+				margin-bottom: 25px
+				padding-left: 20px 
+				border-radius: 30px
+				border: none
+				box-shadow: 0 0 15px 2px #C3C3C3
+				&:focus
+					box-shadow: 0 0 15px 2px rgba($accent, .75)	
+					background-color: rgba($accent, .05)
+					color: $dark
+					font-size: 22px
+					font-weight: 600
+
+			.textarea
+				font-size: 18px
+				min-width: 500px
+				height: 225px
+				padding-left: 20px
+				padding-top: 20px
+				margin-bottom: 25px
+				border-radius: 30px
+				border: none
+				box-shadow: 0 0 15px 2px #C3C3C3
+				&:focus
+					box-shadow: 0 0 15px 2px rgba($accent, .75)	
+					background-color: rgba($accent, .05)
+					color: $dark
+					font-size: 22px
+					font-weight: 600
+			.buttom
+				width: 200px
+		.map
+			margin-left: 100px
+			text-align: center
+			iframe
+				min-width: 645px
+				min-height: 645px
+
+//СТИЛИЗАЦИЯ  ФУТЕРА
+footer
+	width: 100%
+	height: auto
+	.footer
+		width: 75%
+		height: auto
+		margin: 50px auto
+		display: flex
+		justify-content: space-between
+		&-nav
+			display: flex
+			flex-direction: column
+			font-size: 24px
+			font-weight: 600
+			a
+				color: rgba($dark,  1)
+				&:hover
+					text-decoration: none
+					color: rgba($accent, 1)
+
+		&-contact
+			font-size: 22px
+			font-weight: 600
+			i
+				margin-right: 10px
+				font-size: 16px
+			p
+				margin-bottom: 10px
+
+	.copyright
+		text-align: center
+		font-size: 24px
+		font-weight: 600
+		margin-bottom: 40px
+
+	.soc
+		margin-top: 40px
+		margin-bottom: 50px 
+		display: flex
+		justify-content: center
+		a 
+			margin-top: -25px
+			i 
+				font-size: 32px
+				color: $dark
+				margin: 0 25px
+				&:hover
+					color: $accent
+			
+
+
+
+
+
+//СТИЛИЗАЦИЯ  КОРЗИНЫ 
+.basket
+	min-width: 500px
+	max-width: 800px
+	height: auto
+	background-color: rgba(#fff, .99)
+	box-shadow: 0 0 20px rgba($dark, .6)
+	border-radius: 20px
+	margin: 50px auto
+	text-align: center
+	position: relative
+	display: none
+	pointer-events: none
+	&:target
+		display: block
+		pointer-events: auto
+		
+
+
+	h1
+		margin-top: 5px
+		margin-bottom: 10px
+		border: none
+		font-size: 45px
+		text-align: center
+	.order
+		margin: 10px auto
+		width: 90%
+		height: 150px
+		border: 1px solid rgba($dark, .2)
+		border-radius: 5px
+		display: flex
+		align-items: center
+		box-shadow: 0 0 5px rgba($dark, .3)
+		position: relative
+		&:hover
+			background-color: rgba($dark, .02)
+		.delete
+				position: absolute
+				top: 4%
+				right: 1%
+				font-size: 20px
+				color: rgba($dark, .5)
+				text-shadow: 0 0 5px rgba($dark, .3)
+				&:hover
+					color: rgba($accent, .7)
+					text-shadow: 0 0 5px rgba($dark, .3)
+		&-block
+			width: 95%
+			height: 120px
+			display: flex
+			flex-wrap: nowrap
+		&-img
+			margin: 0 15px
+			width: 120px
+			height: 120px
+			border-radius: 5px
+			border: 1px solid rgba($accent, .2)
+			box-shadow: 0 0 5px rgba($dark, .4)
+			img
+				margin: 2px auto
+				width: 116px
+				height: 116px
+		&-info
+			width: 100%
+			heigth: auto
+			text-align: left
+			margin-left: 10px
+			.name
+				width: 100%
+				heigth: auto
+				font-size: 16px
+				font-weight: 600
+				text-shadow: 0 0 3px rgba($dark, .4)
+				margin-bottom: 5px
+			.info
+				width: 100%
+				heigth: auto
+				font-size: 14px
+				text-shadow: 0 0 2px rgba($dark, .3)
+		&-price
+			margin-top: 40px
+			padding-left: 10px
+			border-left: 2px solid rgba($accent, .4)
+			width: 100px
+			height: auto
+			.quantity
+				display: flex
+				justify-content: center				
+				input
+					border-radius: 5px
+					border: none
+					box-shadow: 0 0 5px rgba($accent, .4)
+					width: 40px
+					heigth: 20px
+					margin-right: 10px
+					text-align: center
+					font-size: 16px
+					background-color:  rgba($dark, .005)
+					
+					&:focus
+						border: 1px solid rgba($dark, .4)
+						box-shadow: 0 0 5px rgba($accent, .4)
+						background-color:  rgba($accent, .03)
+				label
+					font-size: 16px
+					font-weight: 600
+			.price
+				width: 100%
+				heigth: 40px
+				text-align: center
+				font-size: 18px
+				font-weight: 600
+				text-shadow: 0 0 0 4px rgba($dark, .5)
+				margin-top: 10px
+	
+	.send-order
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		.button
+				margin: 20px
+				padding: 8px 20px
+				border-radius: 10px
+		.sum
+			font-size:  24px
+			font-weight: 600
+			letter-spacing: 2px
+			margin-right: 50px
+			text-shadow: 0 0 5px rgba($dark, .3)
+	.exit
+		position: absolute
+		top: 5%
+		right: 4% 
+		font-size: 25px
+		color: rgba($dark, .8)
+		text-shadow: 0 0 5px rgba($dark, .3)
+		&:hover
+			color: rgba($accent, .7)
+			text-shadow: 0 0 5px rgba($dark, .3)
+
+
+
+
+
+
+// СТИЛИЗАЦИ  ФОРМЫ ЗАКАЗА
+.order-form
+	width: 350px
+	height: auto
+	margin: auto
+	text-align: center
+	background-color: rgba(#fff, .99)
+	box-shadow: 0 0 20px rgba($dark, .6)
+	border-radius: 25px
+	margin-top: 50px
+	position: relative
+	display: none
+	pointer-events: none
+	&:target
+		display: block
+		pointer-events: auto
+	h1
+		font-size: 25px
+		margin-bottom: 20px
+	form
+		width: 95%
+		margin: auto
+		text-align: center
+		.input
+			font-size: 12px
+			font-style: italic
+			height: 40px
+			width: 95%
+			margin-bottom: 10px
+			padding-left: 20px 
+			border-radius: 30px
+			border: none
+			box-shadow: 0 0 15px 2px #C3C3C3
+			text-shadow: 0 0 3px rgba($dark, .2)
+			&:focus
+				box-shadow: 0 0 15px 2px rgba($accent, .75)	
+				text-shadow: 0 0 3px rgba($dark, .4)
+				background-color: rgba($accent, .05)
+				color: $dark
+				font-size: 16px
+				font-weight: 600
+				font-family: raleway, sans-serif
+				font-style: normal
+		h3
+			margin-top: 10px
+			margin-left: 20px
+			font-size: 16px
+			text-align: left
+			text-shadow: 0 0 3px rgba($dark, .3)
+		a
+			font-size: 16px
+			font-weight: 600
+			text-shadow: 0 0 3px rgba($dark, .5)
+		.button
+				margin: 20px
+				padding: 8px 20px
+				border-radius: 10px
+	.exit
+		position: absolute
+		top: 2%
+		right: 4% 
+		font-size: 25px
+		color: rgba($dark, .8)
+		text-shadow: 0 0 5px rgba($dark, .3)
+		&:hover
+			color: rgba($accent, .7)
+			text-shadow: 0 0 5px rgba($dark, .3)
+
+
+
+
+
+
+
+
+@import "media" // Always at the end

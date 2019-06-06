@@ -1,0 +1,367 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	background: #f4f4f4
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+
+//	СТИЛИЗАЦИЯ СТРАНИЦЫ
+
+.row
+	height: 100vh
+	max-height: 1080px
+	
+
+	.left-bar, .right-bar
+		margin-top: 2.5vh
+		margin-bottom: 2.5vh
+		background: #fff
+		border: none
+		border-radius: 4px
+		box-shadow: 0 0 10px 0 rgba(#000000, .25)	
+		position: relative
+		z-index: 1
+	main 
+		background: #f8f8f8
+		margin-top: 2.5vh
+		margin-bottom: 2.5vh
+		position: relative
+
+
+//	СТИЛИЗАЦИЯ ЛЕВОГО БЛОКА
+
+.left-bar
+	text-align: center
+	font-family: $font
+	.logo 
+		margin: 75px auto 100px auto
+		img
+			width: 125px
+			height: auto
+	.menu
+		margin-bottom: 150px	
+		&-item 
+			font-size: 18px
+			font-weight: 500
+			margin: 15px auto;
+			text-shadow:  0 0 3px rgba(#000000, .3)
+			&:hover
+				color: $accent
+		.active
+			color: $accent
+	footer
+		position: absolute
+		bottom: 0vh
+		left: 0
+		width: 100%
+		font-size: 12px
+		text-shadow: 0 0 3px rgba(#000000, .3)
+		.reg-menu
+			display: flex
+			justify-content: center 
+			margin-bottom: 25px
+			div
+				margin: auto 10px
+				&:hover
+					color: red
+			p
+				font-size: 10px
+				
+
+// СТИЛИЗАЦИЯ КОНТЕНТА
+main 
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	.menu
+		display: flex
+		margin-top: auto
+		margin-bottom: 15px
+		&-item
+			font-size: 16px
+			font-family: $font
+			margin: 0 20px
+			font-weigth: 600
+			text-shadow: inset 0 0 3px rgba(#000000, .3)
+			&:hover
+				color: $accent
+		.active
+			color: $accent
+	
+	// СТИЛИЗАЦИЯ КАРТЫ ТОВАРА
+	.carts
+		width: 100%
+		height: 650px
+		display: flex 
+		flex-wrap: wrap
+		justify-content: center
+		.cart
+			margin: 10px 20px
+			box-shadow: 0 0 10px 0 rgba(#000, .3)
+			border-radius: 5px
+			background: #fff
+			height: 300px
+			width: 250px
+			position: relative
+			img
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 0 
+				left: 0				
+			.info-discount
+				width: 0
+				height: 0
+				border-style: solid
+				border-width: 40px
+				border-color: rgba(green, .7) transparent transparent rgba(green, .7)
+				border-radius: 5px 0 0 0 
+				filter: drop-shadow(0 0 3px rgba(#000, .7))
+				position: relative
+				p
+					position: absolute
+					bottom: -22px
+					right: -22px
+					font-family: $font
+					font-size: 10px
+					font-weight: 600
+					color: $accent
+					text-shadow: inset 0 0 5px 0 rgba(#000, .3)
+					-webkit-transform: rotate(-45deg)
+					-moz-transform: rotate(-45deg)
+					span
+						position: absolute
+						botton: 22px
+						right: 18px
+						font-size: 16px
+						color: #fff
+			.info-price
+				background: rgba(#F8F8F8, .3)
+				width: 70px
+				height: 35px
+				box-shadow: inset 0 0 5px 0 rgba(#000, .3)
+				border-radius: 5px
+				position: absolute
+				bottom: 10px
+				right: 10px
+				text-align: center
+				line-height: 40px
+				p
+					font-family: $font
+					text-shadow: 0 0 5px 0 rgba(#000000, .3)
+					font-size: 18px
+					font-weight: 600
+					color: #000
+					text-shadow: inset 0 0 5px 0 rgba(#000, .3)
+					span
+						color: #000
+						margin-right: 3px
+			.add
+				width: 35px
+				height: 35px
+				background: $accent
+				text-align: center
+				line-height: 40px
+				font-size: 30px
+				font-family: $font
+				font-weight: 700
+				color: #ffffff
+				text-shadow: inset 0 0 5px 0 rgba(#000, .3)
+				box-shadow: 0 0 5px 0 rgba(#000, .5)
+				border-radius: 5px
+				position: absolute
+				bottom: 10px
+				left: 10px
+				&:hover
+					background: rgba($accent, .7)
+					color: rgba(red, .5)
+
+	
+	// СТИЛИЗАЦИЯ ПЕРЕКЛЮЧАТЕЛЯ СТРАНИЦ
+	
+	.nav-page
+		display: flex
+		justify-content: space-between
+		width: 74%
+		height: 30px
+		.fas
+			font-size: 28px
+			color: rgba(#000000, .3)
+		.active-fas
+			color: rgba(#000000, .6)
+			&:hover
+				color: rgba(#000000, .4)
+
+	
+		.pages
+			display: flex
+			height: 100%
+			width: 100%
+			justify-content: center
+			.item 
+				border: 1px solid rgba(#000000, .3)	
+				border-radius: 50%
+				width: 10px
+				height: 10px
+				margin: 7px 2px 0 2px
+			.active
+				width: 12.5px
+				height: 12.5px
+				margin: 5.5px 2px 0 2px
+				border: 1px solid rgba(#000000, .6)	 
+				&-page
+					width: 8.5px
+					height: 8.5px
+					margin: 1px 0px 0px 1px			
+					border-radius: 50%
+					background: rgba(#000000, .6)	
+
+// СТИЛИЗАЦИЯ ПРАВОГО БЛОКА
+// БАЗОВАЯ СТИЛИЗАЦИЯ
+
+.right-bar
+	.close
+		position: absolute
+		left: 2%
+		top: 1%
+		font-size: 30px
+		color: #000000
+		&:hover
+			color: $accent
+	h1
+		text-align: center
+		font-size: 28px
+		font-family: $font
+		font-weight: 700
+		text-shadow: inset 0 0 10px 0 rgba(#000, .3)
+		margin-top: 20px
+	article
+		margin-top: 30px
+		height: 90%
+		width: 100% 
+
+		header
+			width: 100%
+			margin: 25px auto
+			text-align: center
+			img
+				height: 350px	
+				width: auto
+				overflow: hidden
+			.post-title
+				margin-top: 40px
+				text-align: left
+				font-size: 18px
+				font-family: $font
+				font-weight: 700
+				text-shadow: 0 0 10px 0 rgba(#000, .3)
+				padding: 0 15px
+		.post-description
+			margin-top: 20px
+			padding: 0 15px
+			.description
+				height: 250px
+				overflow: hidden
+				margin-bottom: 40px
+				p
+					text-indent: 25px
+					text-align: justify
+					word-spacing: 3px
+					word-wrap: break-word
+					font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif
+					font-size: 16px
+					margin-bottom: 15px
+					color: #7D7D7D
+					padding: 0 10px
+		footer 
+			display: flex
+			justify-content: space-between
+			.more
+				height: 40px
+				line-height: 28px
+				border: 1px solid #000
+				border-radius: 2.5px
+				display: inline
+				padding: 7.5px 20px
+				font-family: $font
+				font-size: 14px
+				font-weight: 700
+				text-shadow: 0 0 5px 0 rgba(#000, .5)
+				box-shadow: 0 0 2px 1px rgba(#000, .2)
+				margin-right: 25px
+				display: inline-block
+				&:hover
+					background: rgba(#C1C1C1, .1)
+					border-color: rgba(#000, .75)
+					color: rgba(#000, .75)
+					cursor: default
+			
+				
+
+
+			
+
+
+				
+				
+
+
+
+// СТИЛИЗАЦИЯ ПРАВОГО БЛОКА
+	
+@import "media" // Всегда в конце

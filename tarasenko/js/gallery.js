@@ -365,7 +365,10 @@ const Gallery = () => {
 			info.style.display = 'none';
 			img.style.opacity = 1;
 		});
-
+		
+		item.addEventListener('click',  el => {
+			console.log(11122143123)
+		});
 	}
 
 	//Создание Кнопки категорий и подставление текста  из JSON
@@ -394,5 +397,9 @@ const Gallery = () => {
 			}
 		});
 	}
+
+
+
+	
 }
 Gallery();
