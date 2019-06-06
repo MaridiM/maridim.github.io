@@ -310,7 +310,6 @@ let items = [
 
 const Gallery = () => {
 	let gallery = document.querySelector('.gallery');
-	
 	for(let i = 0; i < items.length; i++) {
 		// Создание  самой галереи  в  и блоков  с картинками и текста
 		let item = document.createElement('div');
@@ -366,8 +365,31 @@ const Gallery = () => {
 			img.style.opacity = 1;
 		});
 		
+
+		// Открытие  картинки  по нажатию на нее.
+
+		let showImg = document.querySelector('.bigImg');
+			showImg.style.display = 'none';
+			console.log(showImg)
+		
 		item.addEventListener('click',  el => {
-			console.log(11122143123)
+			let id = el.target.id;
+			showImg.style.display = 'block';
+
+			let bigImg = document.createElement('img');
+				showImg.appendChild(bigImg);
+				bigImg.src = `img/gallery/${items[i].bigImage}`;
+
+		});
+		showImg.addEventListener('click', () => {
+			showImg.style.display = 'none';
+
+			let bigImg = showImg.querySelector('img');
+			showImg.removeChild(bigImg);
+			bigImg.src = `img/gallery/${items[i].bigImage}`;
+
+
+
 		});
 	}
 
