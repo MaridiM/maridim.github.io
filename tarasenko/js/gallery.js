@@ -15,6 +15,7 @@ let category = [
 ]
 let items = [
 	{
+		id: 0,
 		name: "My favourite breakfast",
 		category: "stil-life",
 		avilability: "in stock",
@@ -24,6 +25,7 @@ let items = [
 		bigImage: "stil-life/big/35.jpg"
 	},
 	{
+		id: 1,
 		name: "Lilac",
 		category: "stil-life",
 		avilability: "in stock",
@@ -33,6 +35,7 @@ let items = [
 		bigImage: "stil-life/big/84.jpg"
 	},
 	{
+		id: 2,
 		name: "...and Apple",
 		category: "stil-life",
 		avilability: "in stock",
@@ -42,6 +45,7 @@ let items = [
 		bigImage: "stil-life/big/86.jpg"
 	},
 	{
+		id: 3,
 		name: "Summer with friends",
 		category: "stil-life",
 		avilability: "in stock",
@@ -51,6 +55,7 @@ let items = [
 		bigImage: "stil-life/big/94.jpg"
 	},
 	{
+		id: 4,
 		name: "Classic\)\)",
 		category: "stil-life",
 		avilability: "in stock",
@@ -60,6 +65,7 @@ let items = [
 		bigImage: "stil-life/big/114.jpg"
 	},
 	{
+		id: 5,
 		name: "...and bird oil",
 		category: "stil-life",
 		avilability: "in stock",
@@ -69,6 +75,7 @@ let items = [
 		bigImage: "stil-life/big/167.jpg"
 	},
 	{
+		id: 6,
 		name: "More love",
 		category: "stil-life",
 		avilability: "in stock",
@@ -78,6 +85,7 @@ let items = [
 		bigImage: "stil-life/big/169.jpg"
 	},
 	{
+		id: 7,
 		name: "More love 2",
 		category: "stil-life",
 		avilability: "Sold",
@@ -87,6 +95,7 @@ let items = [
 		bigImage: "stil-life/big/171.jpg"
 	},
 	{
+		id: 8,
 		name: "2014",
 		category: "stil-life",
 		avilability: "in stock",
@@ -96,6 +105,7 @@ let items = [
 		bigImage: "stil-life/big/173.jpg"
 	},
 	{
+		id: 9,
 		name: "Red Wine",
 		category: "stil-life",
 		avilability: "Sold",
@@ -105,6 +115,7 @@ let items = [
 		bigImage: "stil-life/big/179.jpg"
 	},
 	{
+		id: 10,
 		name: "In summer",
 		category: "stil-life",
 		avilability: "in stock",
@@ -114,6 +125,7 @@ let items = [
 		bigImage: "stil-life/big/210.jpg"
 	},
 	{
+		id: 11,
 		name: "Gift from Germany",
 		category: "stil-life",
 		avilability: "in stock",
@@ -123,6 +135,7 @@ let items = [
 		bigImage: "stil-life/big/247.jpg"
 	},
 	{
+		id: 12,
 		name: "Expression",
 		category: "nude",
 		avilability: "Sold",
@@ -132,6 +145,7 @@ let items = [
 		bigImage: "nude/big/41.jpg"
 	},
 	{
+		id: 13,
 		name: "Two",
 		category: "nude",
 		avilability: "Sold",
@@ -141,6 +155,7 @@ let items = [
 		bigImage: "nude/big/62.jpg"
 	},
 	{
+		id: 14,
 		name: "Water",
 		category: "nude",
 		avilability: "Sold",
@@ -150,6 +165,7 @@ let items = [
 		bigImage: "nude/big/95.jpg"
 	},
 	{
+		id: 15,
 		name: "Ginger",
 		category: "nude",
 		avilability: "Sold",
@@ -159,6 +175,7 @@ let items = [
 		bigImage: "nude/big/101.jpg"
 	},
 	{
+		id: 16,
 		name: "Sonnet",
 		category: "nude",
 		avilability: "in stock",
@@ -168,6 +185,7 @@ let items = [
 		bigImage: "nude/big/110.jpg"
 	},
 	{
+		id: 17,
 		name: "By the sea",
 		category: "nude",
 		avilability: "in stock",
@@ -177,6 +195,7 @@ let items = [
 		bigImage: "nude/big/118.jpg"
 	},
 	{
+		id: 18,
 		name: "Specular captivity\(diptych\)",
 		category: "nude",
 		avilability: "Sold",
@@ -186,6 +205,7 @@ let items = [
 		bigImage: "nude/big/139.jpg"
 	},
 	{
+		id: 19,
 		name: "Specular captivity\(diptych\)",
 		category: "nude",
 		avilability: "Sold",
@@ -195,6 +215,7 @@ let items = [
 		bigImage: "nude/big/140.jpg"
 	},
 	{
+		id: 20,
 		name: "The solitude",
 		category: "nude",
 		avilability: "in stock",
@@ -204,6 +225,7 @@ let items = [
 		bigImage: "nude/big/141.jpg"
 	},
 	{
+		id: 21,
 		name: "Between heaven and earth",
 		category: "nude",
 		avilability: "in stock",
@@ -213,6 +235,7 @@ let items = [
 		bigImage: "nude/big/142.jpg"
 	},
 	{
+		id: 22,
 		name: "Thistle flavour",
 		category: "nude",
 		avilability: "in stock",
@@ -222,6 +245,7 @@ let items = [
 		bigImage: "nude/big/148.jpg"
 	},
 	{
+		id: 23,
 		name: "S102",
 		category: "nude",
 		avilability: "Sold",
@@ -231,6 +255,7 @@ let items = [
 		bigImage: "nude/big/157.jpg"
 	},
 	{
+		id: 24,
 		name: "Behold",
 		category: "nude",
 		avilability: "in stock",
@@ -240,6 +265,7 @@ let items = [
 		bigImage: "nude/big/165.jpg"
 	},
 	{
+		id: 25,
 		name: "Nude",
 		category: "nude",
 		avilability: "Sold",
@@ -249,6 +275,7 @@ let items = [
 		bigImage: "nude/big/166.jpg"
 	},
 	{
+		id: 26,
 		name: "Expression",
 		category: "nude",
 		avilability: "in stock",
@@ -258,6 +285,7 @@ let items = [
 		bigImage: "nude/big/172.jpg"
 	},
 	{
+		id: 27,
 		name: "She \(diptych\)",
 		category: "nude",
 		avilability: "in stock",
@@ -267,6 +295,7 @@ let items = [
 		bigImage: "nude/big/132a.jpg"
 	},
 	{
+		id: 28,
 		name: "He \(diptych\)",
 		category: "nude",
 		avilability: "in stock",
@@ -280,22 +309,16 @@ let items = [
 ]
 
 const Gallery = () => {
-
-
-
 	let gallery = document.querySelector('.gallery');
 	
-	
-	
 	for(let i = 0; i < items.length; i++) {
-		
 		// Создание  самой галереи  в  и блоков  с картинками и текста
 		let item = document.createElement('div');
 			item.className = 'item';
 			item.classList.add('all');
 			item.classList.add(items[i].category);
 			gallery.appendChild(item);
-
+	
 		let info = document.createElement('div');
 			info.className = 'info';
 			item.appendChild(info);
@@ -325,6 +348,8 @@ const Gallery = () => {
 		info.querySelector('#size').querySelector('span').innerText = items[i].size;
 		
 		let img = document.createElement('img');
+			img.className = items[i].category;
+			img.id = items[i].id;
 			item.appendChild(img);
 			img.src = `img/gallery/${items[i].image}`;
 			
@@ -340,14 +365,6 @@ const Gallery = () => {
 			info.style.display = 'none';
 			img.style.opacity = 1;
 		});
-
-		// Нажатие на картинку или айтем
-
-		item.addEventListener('click', el => {
-			let modal = document.querySelector('.modal');
-			console.log(modal);
-		});
-
 
 	}
 
@@ -377,10 +394,5 @@ const Gallery = () => {
 			}
 		});
 	}
-
-
 }
-
-
-
-Gallery()
+Gallery();
