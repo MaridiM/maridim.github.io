@@ -294,27 +294,32 @@ nav div a:hover {
 .contact-page {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 2.5%;
 }
 
-.contact-page .leftside {
+h1 {
+    letter-spacing: 4px;
+    text-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 700;
+}
+.contact-page .contact {
     width: 20%;
     margin-right: 5%;
     text-align: left;
-    text-indent: 25px;
 }
 
-.contact-page .rightside {
+.contact-page .contact {
     width: 20%;
     text-align: center;
     padding-top: 12.5px;
 }
 
-.contact-page .rightside form {
+.contact-page .contact form {
     width: 100%;
 }
 
-.contact-page .rightside input,
+.contact-page .contact input,
 textarea {
     width: 90%;
     padding: 10px;
@@ -326,13 +331,12 @@ textarea {
     box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.3)
 }
 
-.contact-page .rightside input:focus,
-textarea:focus {
+.contact-page .contact input:focus, textarea:focus {
     outline: none;
 }
 
-.contact-page .rightside button {
-    width: 100px;
+.contact-page .contact button {
+    width: 150px;
     height: 30px;
     line-height: 29px;
     font-size: 14px;
@@ -340,8 +344,12 @@ textarea:focus {
     border: none;
     background: #fff;
     border-radius: 4px;
-    box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 4px 1px rgba(0, 0, 0, 0.3);
     margin: 10px auto 0 auto;
+    letter-spacing: 4px;
+    text-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 700;
 }
 
 .contact-page .success {
@@ -397,6 +405,10 @@ footer .soc div:hover {
 }
 
 .footer-home {
+    position: absolute;
+    bottom: 0;
+}
+.footer-contact {
     position: absolute;
     bottom: 0;
 }

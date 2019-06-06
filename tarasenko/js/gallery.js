@@ -387,9 +387,6 @@ const Gallery = () => {
 			let bigImg = showImg.querySelector('img');
 			showImg.removeChild(bigImg);
 			bigImg.src = `img/gallery/${items[i].bigImage}`;
-
-
-
 		});
 	}
 
