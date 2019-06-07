@@ -451,7 +451,7 @@ let items = [
 		size: "105x80 cm",
 		image: "figurative/53.jpg",
 		bigImage: "figurative/big/53.jpg"
-	}
+	},
 	{
 		id: 43,
 		name: "Alya",
@@ -461,7 +461,7 @@ let items = [
 		size: "90x60 cm",
 		image: "portrait/21.jpg",
 		bigImage: "portrait/big/21.jpg"
-	}
+	},
 	{
 		id: 44,
 		name: "Lefa",
@@ -471,7 +471,7 @@ let items = [
 		size: "70x40 cm",
 		image: "portrait/Lefa.jpg",
 		bigImage: "portrait/big/Lefa.jpg"
-	}
+	},
 	{
 		id: 45,
 		name: "Lefa 3/4",
@@ -481,7 +481,7 @@ let items = [
 		size: "60x40 cm",
 		image: "portrait/32.jpg",
 		bigImage: "portrait/big/32.jpg"
-	}
+	},
 	{
 		id: 46,
 		name: "Evening",
@@ -491,7 +491,7 @@ let items = [
 		size: "80x60 cm",
 		image: "portrait/46.jpg",
 		bigImage: "portrait/big/46.jpg"
-	}
+	},
 	{
 		id: 47,
 		name: "Cat-dog",
@@ -501,7 +501,7 @@ let items = [
 		size: "",
 		image: "portrait/47.jpg",
 		bigImage: "portrait/big/47.jpg"
-	}
+	},
 	{
 		id: 48,
 		name: "Ilja",
@@ -511,7 +511,7 @@ let items = [
 		size: "90x60 cm",
 		image: "portrait/49.jpg",
 		bigImage: "portrait/big/49.jpg"
-	}
+	},
 	{
 		id: 49,
 		name: "My love",
@@ -521,7 +521,7 @@ let items = [
 		size: "85x50 cm",
 		image: "portrait/71.jpg",
 		bigImage: "portrait/big/71.jpg"
-	}
+	},
 	{
 		id: 50,
 		name: "The view ",
@@ -531,7 +531,7 @@ let items = [
 		size: "90x60 cm",
 		image: "nude/176.jpg",
 		bigImage: "nude/big/176.jpg"
-	}
+	},
 	{
 		id: 51,
 		name: "The dreamer",
@@ -541,7 +541,7 @@ let items = [
 		size: "80x110 cm",
 		image: "nude/180a.jpg",
 		bigImage: "nude/big/180a.jpg"
-	}
+	},
 	{
 		id: 52,
 		name: "G",
@@ -551,7 +551,7 @@ let items = [
 		size: "110x65 cm",
 		image: "nude/182.jpg",
 		bigImage: "nude/big/182.jpg"
-	}
+	},
 	{
 		id: 53,
 		name: "His wings",
@@ -561,7 +561,7 @@ let items = [
 		size: "100x80 cm",
 		image: "nude/183.jpg",
 		bigImage: "nude/big/183.jpg"
-	}
+	},
 	{
 		id: 54,
 		name: "Sight",
@@ -571,7 +571,7 @@ let items = [
 		size: "110x80 cm",
 		image: "nude/184.jpg",
 		bigImage: "nude/big/184.jpg"
-	}
+	},
 	{
 		id: 55,
 		name: "Full moon",
