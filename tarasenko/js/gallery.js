@@ -559,8 +559,8 @@ let items = [
 		avilability: "in stock",
 		type: "Oil on canvas",
 		size: "100x80 cm",
-		image: "nude/183.jpg",
-		bigImage: "nude/big/183.jpg"
+		image: "nude/183-0.jpg",
+		bigImage: "nude/big/183-0.jpg"
 	},
 	{
 		id: 54,
