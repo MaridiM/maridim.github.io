@@ -155,7 +155,6 @@ nav .mobMenu {
     width: 100%;
     display: flex;
     justify-content: center;
-
     font-size: 12px;
     margin-bottom: 15px;
 }
@@ -179,7 +178,7 @@ nav .mobMenu {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 3px;
-    margin: auto 10px;
+    margin: 5px 10px;
     background: #fff;
     outline: none;
     border: none;
@@ -418,7 +417,24 @@ footer .soc div:hover {
 
 
 
-
+@media screen and (max-width: 1620px) {
+    /*
+        GALLERY
+    */
+    .gallery-page .gallery {
+        width: 1260px;
+        column-count: 4;
+    }
+}
+@media screen and (max-width: 1300px) {
+    /*
+        GALLERY
+    */
+    .gallery-page .gallery {
+        width: 930px;
+        column-count: 3;
+    }
+}
 
 
 
@@ -446,6 +462,7 @@ footer .soc div:hover {
         margin-bottom: 3px;
     }
     .slider img {
+        overflow: hidden;
         width: auto;
         height: 100%;
     }
@@ -478,6 +495,17 @@ footer .soc div:hover {
         margin-top: 4px;
     }
 
+    /*
+        GALLERY
+    */
+    .gallery-page .gallery {
+        width: 650px;
+        column-count: 3;
+    }
+    .gallery-page .gallery .item, img {
+        width: 210px;
+        height: auto;
+    }
 }
 @media screen and (max-width: 680px) {
 
@@ -524,17 +552,28 @@ footer .soc div:hover {
         margin-top: 2px;
     }
 
+
+       
+    /*
+        GALLERY
+    */
+       .gallery-page .gallery {
+           width: 440px;
+           column-count: 2;
+       }
+
+       .gallery-page .gallery .item, img {
+           width: 210px;
+           height: auto;
+       }
+
+
 }
 @media screen and (max-width: 515px) {
 
     /*
         HOME
     */
-    header {
-        height: 80px;
-        background: rgba(255, 255, 255, 0.2);
-        background: #fff;
-    }
     .header {
         height: 40px;
         padding: 0 5%;
@@ -549,13 +588,13 @@ footer .soc div:hover {
         margin-bottom: 3px;
     }
     nav{
-        height: 40px;
+        height: 60px;
     }
     nav div {
         display: none;
     }
     nav .mobMenu {
-        font-size: 20px;
+        font-size: 28px;
         display: block;
     }
     .active .mobMenu {
@@ -592,11 +631,34 @@ footer .soc div:hover {
         margin: auto 7.5px;
     }
 
+    /*
+        GALLERY
+    */
+    .gallery-page .gallery {
+        width: 350px;
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    .gallery-page .gallery .item, img {
+        width: 170px;
+        height: auto;
+    }
 }
 @media screen and (max-width: 320px) {
 
-    /*
-        HOME
+     /*
+        GALLERY
     */
+     .gallery-page .gallery {
+         width: 290px;
+         column-count: 2;
+         column-gap: 10px;
+     }
+
+     .gallery-page .gallery .item, img {
+         width: 140px;
+         height: auto;
+     }
 
 }

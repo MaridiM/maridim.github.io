@@ -14,7 +14,7 @@ const Slider = () => {
 	img[el].style.display = 'block';	
 }
 
-setInterval(Slider, 10000);
+setInterval(Slider, 5000);
 
 // НАЖАТИЕ НА БУРГЕР МЕНЮ
 let burger = document.querySelector('.fas'),
@@ -28,8 +28,9 @@ document.addEventListener('click', el => {
 		header.style.height = '100vh';
 	} else {
 		nav.classList.remove('active');
-		header.style.height = '80px';
+		header.style.height = '100px';
 	}
+
 
 	console.log(target);
 });
