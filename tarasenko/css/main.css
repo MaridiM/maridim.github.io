@@ -415,15 +415,10 @@ footer .soc div {
 footer .soc div:hover {
     color: #535353
 }
-.footer-home {
+.footer-home, .footer-contact{
     position: absolute;
-    bottom: -50px;
-    padding-bottom: 50px;
-}
-.footer-contact {
-    position: absolute;
-    bottom: -50px;
-    padding-bottom: 50px;
+    bottom: -60px;
+    padding-bottom: 60px;
 }
 
 
