@@ -106,12 +106,7 @@ nav .mobMenu {
 }
 .slider img {
     width: 100%;
-    height: 100vh;
-}
-.home-page {
-    width: 100%;
-    height: 760px;
-    overflow: hidden;
+    height: auto;
 }
 
 
