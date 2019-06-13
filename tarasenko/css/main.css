@@ -108,7 +108,11 @@ nav .mobMenu {
     width: 100%;
     height: 100vh;
 }
-
+.home-page {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
 
 /*
