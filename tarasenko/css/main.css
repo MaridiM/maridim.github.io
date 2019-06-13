@@ -240,7 +240,7 @@ nav .mobMenu {
 	СТИЛИЗАЦИЯ ОБО МНЕ
 */
 .texts-page {
-    margin: 50px auto;
+    margin: 25px auto;
     font-family: 'Julius Sans One', sans-serif;
     font-weight: 400;
 }
@@ -273,7 +273,7 @@ nav .mobMenu {
 .texts-page article .main div {
     width: 45%;
     height: 45%;
-    margin: 0 25px 25px 25px;
+    margin: 0 auto 25px auto;
 }
 .texts-page article .main div h1{
     letter-spacing: 4px;
@@ -287,6 +287,25 @@ nav .mobMenu {
     border-radius: 5px;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
 }
+.texts-page article section {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.texts-page article section h4 {
+    font-size: 18px;  
+}
+.texts-page article section a {
+    margin-top: 10px;  
+    color: #535353;
+}
+.texts-page article section a:hover {
+    color: #0000FF;
+}
 
 /*
 	СТИЛИЗАЦИЯ СОНТАКТОВ
@@ -297,7 +316,7 @@ nav .mobMenu {
     padding-top: 2.5%;
 }
 
-h1 {
+.contact-page h1 {
     letter-spacing: 4px;
     text-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
     font-family: 'Julius Sans One', sans-serif;
@@ -305,18 +324,12 @@ h1 {
 }
 .contact-page .contact {
     width: 20%;
-    margin-right: 5%;
-    text-align: left;
-}
-
-.contact-page .contact {
-    width: 20%;
     text-align: center;
     padding-top: 12.5px;
 }
-
 .contact-page .contact form {
     width: 100%;
+    margin: auto;
 }
 
 .contact-page .contact input,
@@ -422,15 +435,47 @@ footer .soc div:hover {
         column-count: 4;
     }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1366px) {
     /*
-    GALLERY
+        GALLERY
     */
     .gallery-page .gallery {
         width: 930px;
         column-count: 3;
     }
+     /*
+        TEXTS
+    */
+    .texts-page article {
+        margin: 0 15%;
+    }
+    .texts-page article .main {
+        flex-direction: column;
+    }
+    .texts-page article .main div {
+        width: 100%;
+    }
+    .texts-page article .main div h1 {
+        text-align: center;
+    }
+    .texts-page article .main img {
+        width: 75%;
+        height: auto;
+        margin: 25px auto;
+    }
+
+    /*
+        CONTACT ME
+    */
+    .contact-page .contact {
+        width: 30%;
+    }
+    .contact-page h1 {
+        font-size: 20px;
+    }
+
 }
+
 
 
 
@@ -460,7 +505,7 @@ footer .soc div:hover {
     .slider img {
         overflow: hidden;
         width: auto;
-        height: 100%;
+        height: 100vh;
     }
     nav {
         height: 40px;
@@ -513,6 +558,58 @@ footer .soc div:hover {
     .cv-page .cv {
         margin: 25px auto;
         width: 70%;
+    }
+    /*
+        TEXTS
+    */
+    .texts-page article {
+        margin: 0 10%;
+    }
+
+    .texts-page article .main {
+        flex-direction: column;
+    }
+
+    .texts-page article .main div {
+         width: 90%;
+    }
+
+    .texts-page article .main div h1 {
+        text-align: center;
+        font-size: 21px
+    }
+
+    .texts-page article .main img {
+        width: 75%;
+        height: auto;
+        margin: 25px auto;
+    }
+    .texts-page article p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 27.5px;
+    }
+    .texts-page article p b {
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+    }
+    .texts-page article section h4 {
+        font-size: 16px;
+    }
+    .texts-page article section {
+        font-size: 14px;
+        padding: 25px;
+    }
+    /*
+        CONTACT ME
+    */
+    .contact-page .contact {
+        width: 45%;
+    }
+
+    .contact-page h1 {
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 680px) {
@@ -586,6 +683,69 @@ footer .soc div:hover {
         width: 80%;
     }
 
+    /*
+        TEXTS
+    */
+    .texts-page {
+        margin: 10px auto;
+    }
+    .texts-page article {
+        margin: 0 5%;
+    }
+
+    .texts-page article .main div {
+        width: 100%;
+        margin: 0 auto 10px auto;
+    }
+
+    .texts-page article .main div h1 {
+        font-size: 16px
+    }
+
+    .texts-page article .main img {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .texts-page article p {
+        font-size: 10px;
+        line-height: 15px;
+        text-indent: 25px;
+    }
+
+    .texts-page article p b {
+        font-size: 11px;
+        margin-bottom: 1px;
+    }
+
+    .texts-page article section h4 {
+        font-size: 14px;
+    }
+
+    .texts-page article section {
+        font-size: 11px;
+    }
+    .texts-page article section h4 {
+        font-size: 16px;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    .texts-page article section a {
+        margin-top: 7.5px;
+        color: #535353;
+    }
+
+    /*
+        CONTACT ME
+    */
+    .contact-page .contact {
+        margin-top: 5%;
+        width: 70%;
+    }
+
+    .contact-page h1 {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 515px) {
 
@@ -727,5 +887,16 @@ footer .soc div:hover {
 
     .cv-page {
         font-size: 9px;
+    }
+
+    /*
+        CONTACT ME
+    */
+    .contact-page .contact {
+        width: 80%;
+    }
+
+    .contact-page h1 {
+        font-size: 16px;
     }
 }
