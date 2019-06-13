@@ -23,137 +23,137 @@ let category = [
 ]
 let items = [
 	{
-		id: 0,
-		name: "My favourite breakfast",
-		category: "stil-life",
-		avilability: "in stock",
-		type: "Oil on canvas",
-		size: "60x40 cm",
-		image: "stil-life/35.jpg",
-		bigImage: "stil-life/big/35.jpg"
-	},
-	{
-		id: 1,
-		name: "Lilac",
-		category: "stil-life",
-		avilability: "in stock",
-		type: "Oil on canvas",
-		size: "90x60 cm",
-		image: "stil-life/84.jpg",
-		bigImage: "stil-life/big/84.jpg"
-	},
-	{
-		id: 2,
-		name: "...and Apple",
-		category: "stil-life",
-		avilability: "in stock",
-		type: "Oil on canvas",
-		size: "71x52 cm",
-		image: "stil-life/86.jpg",
-		bigImage: "stil-life/big/86.jpg"
-	},
-	{
-		id: 3,
-		name: "Summer with friends",
-		category: "stil-life",
-		avilability: "in stock",
-		type: "Oil on canvas",
-		size: "41x60 cm",
-		image: "stil-life/94.jpg",
-		bigImage: "stil-life/big/94.jpg"
-	},
-	{
-		id: 4,
-		name: "Classic\)\)",
-		category: "stil-life",
-		avilability: "in stock",
-		type: "Oil on canvas",
-		size: "60x85 cm",
-		image: "stil-life/114.jpg",
-		bigImage: "stil-life/big/114.jpg"
-	},
-	{
-		id: 5,
-		name: "...and bird oil",
-		category: "stil-life",
-		avilability: "in stock",
-		type: "Acrylic on canvas",
-		size: "80x70 cm",
-		image: "stil-life/167.jpg",
-		bigImage: "stil-life/big/167.jpg"
-	},
-	{
-		id: 6,
-		name: "More love",
-		category: "stil-life",
-		avilability: "in stock",
-		type: "Oil, acrylic on canvas",
-		size: "70x75 cm",
-		image: "stil-life/169.jpg",
-		bigImage: "stil-life/big/169.jpg"
-	},
-	{
-		id: 7,
-		name: "More love 2",
-		category: "stil-life",
-		avilability: "Sold",
-		type: "Oil, acrylic on canvas",
-		size: "85x60 cm",
-		image: "stil-life/171.jpg",
-		bigImage: "stil-life/big/171.jpg"
-	},
-	{
-		id: 8,
-		name: "2014",
-		category: "stil-life",
-		avilability: "in stock",
-		type: "Oil, acrylic on canvas",
-		size: "70x55 cm",
-		image: "stil-life/173.jpg",
-		bigImage: "stil-life/big/173.jpg"
-	},
-	{
-		id: 9,
-		name: "Red Wine",
-		category: "stil-life",
-		avilability: "Sold",
-		type: "Oil on canvas",
-		size: "90x70 cm",
-		image: "stil-life/179.jpg",
-		bigImage: "stil-life/big/179.jpg"
-	},
-	{
-		id: 10,
-		name: "In summer",
-		category: "stil-life",
-		avilability: "in stock",
-		type: "Oil, acrylic on canvas",
-		size: "75x70 cm",
-		image: "stil-life/210.jpg",
-		bigImage: "stil-life/big/210.jpg"
-	},
-	{
-		id: 11,
-		name: "Gift from Germany",
-		category: "stil-life",
-		avilability: "in stock",
-		type: "Oil, acrylic on canvas",
-		size: "100x70 cm",
-		image: "stil-life/247.jpg",
-		bigImage: "stil-life/big/247.jpg"
-	},
-	{
-		id: 12,
-		name: "Expression",
+		id: 67,
+		name: "Relaxation",
 		category: "nude",
-		avilability: "Sold",
+		avilability: "in stock",
 		type: "Oil on canvas",
-		size: "70x100 cm",
-		image: "nude/41.jpg",
-		bigImage: "nude/big/41.jpg"
+		size: "70x115 cm",
+		image: "nude/203.jpg",
+		bigImage: "nude/big/203.jpg"
 	},
 	{
-		id: 13,
+		id: 66,
+		name: "\(diptych\)",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "110x80 cm",
+		image: "nude/eva.jpg",
+		bigImage: "nude/big/eva.jpg"
+	},
+	{
+		id: 65,
+		name: "Fighting\(giptych\)",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "80x180 cm",
+		image: "nude/borba1.jpg",
+		bigImage: "nude/big/borba1.jpg"
+	},
+	{
+		id: 64,
+		name: "Solitude 2",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "95x70 cm",
+		image: "nude/254.jpg",
+		bigImage: "nude/big/254.jpg"
+	},
+	{
+		id: 63,
+		name: "Embrace",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "120x85 cm",
+		image: "nude/249.jpg",
+		bigImage: "nude/big/249.jpg"
+	},
+	{
+		id: 62,
+		name: "My childhood",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "75x110 cm",
+		image: "nude/241а.jpg",
+		bigImage: "nude/big/241а.jpg"
+	},
+	{
+		id: 61,
+		name: "Thirst for flight",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil on canvas",
+		size: "110x80 cm",
+		image: "nude/235.jpg",
+		bigImage: "nude/big/235.jpg"
+	},
+	{
+		id: 60,
+		name: "I dream'd in a dream",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "100x80 cm",
+		image: "nude/231.jpg",
+		bigImage: "nude/big/231.jpg"
+	},
+	{
+		id: 59,
+		name: "The red",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "115x50 cm",
+		image: "nude/229с.jpg",
+		bigImage: "nude/big/229с.jpg"
+	},
+	{
+		id: 58,
+		name: "Black head",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "80x100 cm",
+		image: "nude/218.jpg",
+		bigImage: "nude/big/218.jpg"
+	},
+	{
+		id: 57,
+		name: "3D",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "50x100 cm",
+		image: "nude/204.jpg",
+		bigImage: "nude/big/204.jpg"
+	},
+	{
+		id: 56,
+		name: "Fighting",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "85x120 cm",
+		image: "nude/202.jpg",
+		bigImage: "nude/big/202.jpg"
+	},
+	{
+		id: 55,
+		name: "The tension",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "110x80 cm",
+		image: "nude/201.jpg",
+		bigImage: "nude/big/201.jpg"
+	},
+	{
+		id: 54,
 		name: "Two",
 		category: "nude",
 		avilability: "Sold",
@@ -163,7 +163,7 @@ let items = [
 		bigImage: "nude/big/62.jpg"
 	},
 	{
-		id: 14,
+		id: 53,
 		name: "Water",
 		category: "nude",
 		avilability: "Sold",
@@ -173,7 +173,7 @@ let items = [
 		bigImage: "nude/big/95.jpg"
 	},
 	{
-		id: 15,
+		id: 52,
 		name: "Ginger",
 		category: "nude",
 		avilability: "Sold",
@@ -183,7 +183,7 @@ let items = [
 		bigImage: "nude/big/101.jpg"
 	},
 	{
-		id: 16,
+		id: 51,
 		name: "Sonnet",
 		category: "nude",
 		avilability: "in stock",
@@ -193,7 +193,7 @@ let items = [
 		bigImage: "nude/big/110.jpg"
 	},
 	{
-		id: 17,
+		id: 50,
 		name: "By the sea",
 		category: "nude",
 		avilability: "in stock",
@@ -203,7 +203,7 @@ let items = [
 		bigImage: "nude/big/118.jpg"
 	},
 	{
-		id: 18,
+		id: 49,
 		name: "Specular captivity\(diptych\)",
 		category: "nude",
 		avilability: "Sold",
@@ -213,7 +213,7 @@ let items = [
 		bigImage: "nude/big/139.jpg"
 	},
 	{
-		id: 19,
+		id: 48,
 		name: "Specular captivity\(diptych\)",
 		category: "nude",
 		avilability: "Sold",
@@ -223,7 +223,7 @@ let items = [
 		bigImage: "nude/big/140.jpg"
 	},
 	{
-		id: 20,
+		id: 47,
 		name: "The solitude",
 		category: "nude",
 		avilability: "in stock",
@@ -233,7 +233,7 @@ let items = [
 		bigImage: "nude/big/141.jpg"
 	},
 	{
-		id: 21,
+		id: 46,
 		name: "Between heaven and earth",
 		category: "nude",
 		avilability: "in stock",
@@ -243,7 +243,7 @@ let items = [
 		bigImage: "nude/big/142.jpg"
 	},
 	{
-		id: 22,
+		id: 45,
 		name: "Thistle flavour",
 		category: "nude",
 		avilability: "in stock",
@@ -253,7 +253,7 @@ let items = [
 		bigImage: "nude/big/148.jpg"
 	},
 	{
-		id: 23,
+		id: 44,
 		name: "S102",
 		category: "nude",
 		avilability: "Sold",
@@ -263,7 +263,7 @@ let items = [
 		bigImage: "nude/big/157.jpg"
 	},
 	{
-		id: 24,
+		id: 43,
 		name: "Behold",
 		category: "nude",
 		avilability: "in stock",
@@ -273,7 +273,7 @@ let items = [
 		bigImage: "nude/big/165.jpg"
 	},
 	{
-		id: 25,
+		id: 42,
 		name: "Nude",
 		category: "nude",
 		avilability: "Sold",
@@ -283,7 +283,7 @@ let items = [
 		bigImage: "nude/big/166.jpg"
 	},
 	{
-		id: 26,
+		id: 41,
 		name: "Expression",
 		category: "nude",
 		avilability: "in stock",
@@ -293,7 +293,7 @@ let items = [
 		bigImage: "nude/big/172.jpg"
 	},
 	{
-		id: 27,
+		id: 40,
 		name: "She \(diptych\)",
 		category: "nude",
 		avilability: "in stock",
@@ -303,7 +303,7 @@ let items = [
 		bigImage: "nude/big/132a.jpg"
 	},
 	{
-		id: 28,
+		id: 39,
 		name: "He \(diptych\)",
 		category: "nude",
 		avilability: "in stock",
@@ -313,7 +313,7 @@ let items = [
 		bigImage: "nude/big/133.jpg"
 	},
 	{
-		id: 29,
+		id: 38,
 		name: "Birdie",
 		category: "portrait",
 		avilability: "in stock",
@@ -323,7 +323,7 @@ let items = [
 		bigImage: "portrait/big/78.jpg"
 	},
 	{
-		id: 30,
+		id: 37,
 		name: "Dedicated to Fellini",
 		category: "portrait",
 		avilability: "in stock",
@@ -333,7 +333,7 @@ let items = [
 		bigImage: "portrait/big/125.jpg"
 	},
 	{
-		id: 31,
+		id: 36,
 		name: "Moonlight boy",
 		category: "portrait",
 		avilability: "in stock",
@@ -343,7 +343,7 @@ let items = [
 		bigImage: "portrait/big/145.jpg"
 	},
 	{
-		id: 32,
+		id: 35,
 		name: "My sweet greyhound",
 		category: "portrait",
 		avilability: "Sold",
@@ -353,7 +353,7 @@ let items = [
 		bigImage: "portrait/big/208.jpg"
 	},
 	{
-		id: 33,
+		id: 34,
 		name: "Woody!",
 		category: "portrait",
 		avilability: "in stock",
@@ -363,7 +363,7 @@ let items = [
 		bigImage: "portrait/big/219.jpg"
 	},
 	{
-		id: 34,
+		id: 33,
 		name: "Tany's glasses",
 		category: "portrait",
 		avilability: "in stock",
@@ -373,7 +373,7 @@ let items = [
 		bigImage: "portrait/big/242.jpg"
 	},
 	{
-		id: 35,
+		id: 32,
 		name: "After the performance",
 		category: "figurative",
 		avilability: "in stock",
@@ -383,7 +383,7 @@ let items = [
 		bigImage: "figurative/big/03.jpg"
 	},
 	{
-		id: 36,
+		id: 31,
 		name: "Winter holidays",
 		category: "figurative",
 		avilability: "Sold",
@@ -393,7 +393,7 @@ let items = [
 		bigImage: "figurative/big/08.jpg"
 	},
 	{
-		id: 37,
+		id: 30,
 		name: "Self-portrait with a cat",
 		category: "figurative",
 		avilability: "in stock",
@@ -403,7 +403,7 @@ let items = [
 		bigImage: "figurative/big/16.jpg"
 	},
 	{
-		id: 38,
+		id: 29,
 		name: "The boy in the forest",
 		category: "figurative",
 		avilability: "Sold",
@@ -413,7 +413,7 @@ let items = [
 		bigImage: "figurative/big/22.jpg"
 	},
 	{
-		id: 39,
+		id: 28,
 		name: "My childhood",
 		category: "figurative",
 		avilability: "in stock",
@@ -423,7 +423,7 @@ let items = [
 		bigImage: "figurative/big/33.jpg"
 	},
 	{
-		id: 40,
+		id: 27,
 		name: "Egyptian cats",
 		category: "figurative",
 		avilability: "Sold",
@@ -433,7 +433,7 @@ let items = [
 		bigImage: "figurative/big/40.jpg"
 	},
 	{
-		id: 41,
+		id: 26,
 		name: "Friends",
 		category: "figurative",
 		avilability: "in stock",
@@ -443,7 +443,7 @@ let items = [
 		bigImage: "figurative/big/48.jpg"
 	},
 	{
-		id: 42,
+		id: 25,
 		name: "Sight",
 		category: "portrait",
 		avilability: "Sold",
@@ -453,7 +453,7 @@ let items = [
 		bigImage: "figurative/big/53.jpg"
 	},
 	{
-		id: 43,
+		id: 24,
 		name: "Alya",
 		category: "portrait",
 		avilability: "Sold",
@@ -463,7 +463,7 @@ let items = [
 		bigImage: "portrait/big/21.jpg"
 	},
 	{
-		id: 44,
+		id: 23,
 		name: "Lefa",
 		category: "portrait",
 		avilability: "Sold",
@@ -473,7 +473,7 @@ let items = [
 		bigImage: "portrait/big/Lefa.jpg"
 	},
 	{
-		id: 45,
+		id: 22,
 		name: "Lefa 3/4",
 		category: "portrait",
 		avilability: "in stock",
@@ -483,7 +483,7 @@ let items = [
 		bigImage: "portrait/big/32.jpg"
 	},
 	{
-		id: 46,
+		id: 21,
 		name: "Evening",
 		category: "portrait",
 		avilability: "Sold",
@@ -493,7 +493,7 @@ let items = [
 		bigImage: "portrait/big/46.jpg"
 	},
 	{
-		id: 47,
+		id: 20,
 		name: "Cat-dog",
 		category: "portrait",
 		avilability: "in stock",
@@ -503,7 +503,7 @@ let items = [
 		bigImage: "portrait/big/47.jpg"
 	},
 	{
-		id: 48,
+		id: 19,
 		name: "Ilja",
 		category: "portrait",
 		avilability: "in stock",
@@ -513,7 +513,7 @@ let items = [
 		bigImage: "portrait/big/49.jpg"
 	},
 	{
-		id: 49,
+		id: 18,
 		name: "My love",
 		category: "portrait",
 		avilability: "in stock",
@@ -523,7 +523,7 @@ let items = [
 		bigImage: "portrait/big/71.jpg"
 	},
 	{
-		id: 50,
+		id: 17,
 		name: "The view ",
 		category: "nude",
 		avilability: "in stock",
@@ -533,7 +533,7 @@ let items = [
 		bigImage: "nude/big/176.jpg"
 	},
 	{
-		id: 51,
+		id: 16,
 		name: "The dreamer",
 		category: "nude",
 		avilability: "in stock",
@@ -543,7 +543,7 @@ let items = [
 		bigImage: "nude/big/180a.jpg"
 	},
 	{
-		id: 52,
+		id: 15,
 		name: "G",
 		category: "nude",
 		avilability: "Sold",
@@ -553,7 +553,7 @@ let items = [
 		bigImage: "nude/big/182.jpg"
 	},
 	{
-		id: 53,
+		id: 14,
 		name: "His wings",
 		category: "nude",
 		avilability: "in stock",
@@ -563,7 +563,7 @@ let items = [
 		bigImage: "nude/big/183-0.jpg"
 	},
 	{
-		id: 54,
+		id: 13,
 		name: "Sight",
 		category: "nude",
 		avilability: "in stock",
@@ -573,7 +573,7 @@ let items = [
 		bigImage: "nude/big/184.jpg"
 	},
 	{
-		id: 55,
+		id: 12,
 		name: "Full moon",
 		category: "nude",
 		avilability: "in stock",
@@ -581,12 +581,132 @@ let items = [
 		size: "100x80 cm",
 		image: "nude/190.jpg",
 		bigImage: "nude/big/190.jpg"
+	},
+	{
+		id: 11,
+		name: "My favourite breakfast",
+		category: "stil-life",
+		avilability: "in stock",
+		type: "Oil on canvas",
+		size: "60x40 cm",
+		image: "stil-life/35.jpg",
+		bigImage: "stil-life/big/35.jpg"
+	},
+	{
+		id: 10,
+		name: "Lilac",
+		category: "stil-life",
+		avilability: "Sold",
+		type: "Oil on canvas",
+		size: "90x60 cm",
+		image: "stil-life/84.jpg",
+		bigImage: "stil-life/big/84.jpg"
+	},
+	{
+		id: 9,
+		name: "...and Apple",
+		category: "stil-life",
+		avilability: "Sold",
+		type: "Oil on canvas",
+		size: "71x52 cm",
+		image: "stil-life/86.jpg",
+		bigImage: "stil-life/big/86.jpg"
+	},
+	{
+		id: 8,
+		name: "Summer with friends",
+		category: "stil-life",
+		avilability: "in stock",
+		type: "Oil on canvas",
+		size: "41x60 cm",
+		image: "stil-life/94.jpg",
+		bigImage: "stil-life/big/94.jpg"
+	},
+	{
+		id: 7,
+		name: "Classic\)\)",
+		category: "stil-life",
+		avilability: "in stock",
+		type: "Oil on canvas",
+		size: "60x85 cm",
+		image: "stil-life/114.jpg",
+		bigImage: "stil-life/big/114.jpg"
+	},
+	{
+		id: 6,
+		name: "...and bird oil",
+		category: "stil-life",
+		avilability: "Sold",
+		type: "Acrylic on canvas",
+		size: "80x70 cm",
+		image: "stil-life/167.jpg",
+		bigImage: "stil-life/big/167.jpg"
+	},
+	{
+		id: 5,
+		name: "More love",
+		category: "stil-life",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "70x75 cm",
+		image: "stil-life/169.jpg",
+		bigImage: "stil-life/big/169.jpg"
+	},
+	{
+		id: 4,
+		name: "More love 2",
+		category: "stil-life",
+		avilability: "Sold",
+		type: "Oil, acrylic on canvas",
+		size: "85x60 cm",
+		image: "stil-life/171.jpg",
+		bigImage: "stil-life/big/171.jpg"
+	},
+	{
+		id: 3,
+		name: "2014",
+		category: "stil-life",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "70x55 cm",
+		image: "stil-life/173.jpg",
+		bigImage: "stil-life/big/173.jpg"
+	},
+	{
+		id: 2,
+		name: "Red Wine",
+		category: "stil-life",
+		avilability: "Sold",
+		type: "Oil on canvas",
+		size: "90x70 cm",
+		image: "stil-life/179.jpg",
+		bigImage: "stil-life/big/179.jpg"
+	},
+	{
+		id: 1,
+		name: "In summer",
+		category: "stil-life",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "75x70 cm",
+		image: "stil-life/210.jpg",
+		bigImage: "stil-life/big/210.jpg"
+	},
+	{
+		id: 0,
+		name: "Gift from Germany",
+		category: "stil-life",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "100x70 cm",
+		image: "stil-life/247.jpg",
+		bigImage: "stil-life/big/247.jpg"
 	}
 ]
 
 const Gallery = () => {
 	let gallery = document.querySelector('.gallery');
-	for(let i = 0; i < items.length; i++) {
+	for (let i = 0; i < items.length; i++ )	{
 		// Создание  самой галереи  в  и блоков  с картинками и текста
 		let item = document.createElement('div');
 			item.className = 'item';
@@ -651,18 +771,21 @@ const Gallery = () => {
 		item.addEventListener('click',  el => {
 			let id = el.target.id;
 			showImg.style.display = 'block';
-
-			let bigImg = document.createElement('img');
-				showImg.appendChild(bigImg);
-				bigImg.src = `img/gallery/${items[i].bigImage}`;
-
+			if (window.innerWidth > 515) {
+				let bigImg = document.createElement('img');
+					showImg.appendChild(bigImg);
+					bigImg.src = `img/gallery/${items[i].bigImage}`;
+			} else {
+				showImg.style.display = 'none';
+			}
 		});
 		showImg.addEventListener('click', () => {
 			showImg.style.display = 'none';
-
 			let bigImg = showImg.querySelector('img');
-			showImg.removeChild(bigImg);
-			bigImg.src = `img/gallery/${items[i].bigImage}`;
+				showImg.removeChild(bigImg);
+				bigImg.src = `img/gallery/${items[i].bigImage}`;
+			
+			
 		});
 	}
 

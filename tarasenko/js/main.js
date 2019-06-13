@@ -8,12 +8,10 @@ document.addEventListener('click', el => {
 	if (target === burger) {
 		nav.classList.add('active');
 		header.style.height = '100vh';
-	} else {
+	} else if (nav.classList.contains('active')){
 		nav.classList.remove('active');
-		header.style.height = '100px';
+		header.style.height = '115px';
 	}
-
-
 	console.log(target);
 });
 
