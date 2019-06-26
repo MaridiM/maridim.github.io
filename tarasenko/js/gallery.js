@@ -17,11 +17,235 @@ let category = [
 		name: 'Portrait'
 	},
 	{
+		id: 'drawing',
+		name: 'Drawing'
+	},
+	{
 		id: 'figurative',
 		name: 'Figurative'
 	}
 ]
 let items = [
+	{
+		id: 88,
+		name: "Where are you my little prince?",
+		category: "portrait",
+		avilability: "in stock",
+		type: "Oil on canvas",
+		size: "100x70 cm",
+		image: "portrait/245.jpg",
+		bigImage: "portrait/big/245.jpg"
+	},
+	{
+		id: 88,
+		name: "Where are you my little prince?",
+		category: "portrait",
+		avilability: "in stock",
+		type: "Oil on canvas",
+		size: "60x50 cm",
+		image: "portrait/227а.jpg",
+		bigImage: "portrait/big/227а.jpg"
+	},
+	{
+		id: 87,
+		name: "Poems and expectations",
+		category: "portrait",
+		avilability: "Sold",
+		type: "Oil, Paper, pastel on canvas",
+		size: "100x55 cm",
+		image: "portrait/163.jpg",
+		bigImage: "portrait/big/163.jpg"
+	},
+	{
+		id: 86,
+		name: "Little Prince",
+		category: "portrait",
+		avilability: "in stock",
+		type: "Oil, acrylic  on canvas",
+		size: "100x70 cm",
+		image: "portrait/237.jpg",
+		bigImage: "portrait/big/237.jpg"
+	},
+	{
+		id: 85,
+		name: "Face to face",
+		category: "figurative",
+		avilability: "in stock",
+		type: "Oil, acrylic  on canvas",
+		size: "90x60 cm",
+		image: "figurative/256.jpg",
+		bigImage: "figurative/big/256.jpg"
+	},
+	{
+		id: 84,
+		name: "Geniuses draw \(Mattis\)",
+		category: "figurative",
+		avilability: "in stock",
+		type: "Oil, acrylic  on canvas",
+		size: "130x90 cm",
+		image: "figurative/243.jpg",
+		bigImage: "figurative/big/243.jpg"
+	},
+	{
+		id: 83,
+		name: "Blue jeans",
+		category: "figurative",
+		avilability: "in stock",
+		type: "Oil, acrylic  on canvas",
+		size: "110x100 cm",
+		image: "figurative/221.jpg",
+		bigImage: "figurative/big/221.jpg"
+	},
+	{
+		id: 82,
+		name: "The best friends",
+		category: "figurative",
+		avilability: "Sold",
+		type: "Oil on canvas",
+		size: "95x55 cm",
+		image: "figurative/178.jpg",
+		bigImage: "figurative/big/178.jpg"
+	},
+	{
+		id: 81,
+		name: "Peter and his gift",
+		category: "figurative",
+		avilability: "in stock",
+		type: "Oil on canvas",
+		size: "85x50 cm",
+		image: "figurative/224.jpg",
+		bigImage: "figurative/big/224.jpg"
+	},
+	{
+		id: 80,
+		name: "Paris I love you",
+		category: "figurative",
+		avilability: "Sold",
+		type: "Oil on canvas",
+		size: "100x80 cm",
+		image: "figurative/146.jpg",
+		bigImage: "figurative/big/146.jpg"
+	},
+	{
+		id: 79,
+		name: "Alya",
+		category: "drawing",
+		avilability: "Sold",
+		type: "Pencil on paper",
+		size: "30x21 cm",
+		image: "drawing/27.jpg",
+		bigImage: "drawing/big/27.jpg"
+	},
+	{
+		id: 78,
+		name: "Profile",
+		category: "drawing",
+		avilability: "Sold",
+		type: "Pencil on paper",
+		size: "30x21 cm",
+		image: "drawing/29.jpg",
+		bigImage: "drawing/big/29.jpg"
+	},
+	{
+		id: 77,
+		name: "Pencil on paper",
+		category: "drawing",
+		avilability: "Sold",
+		type: "Pencil on paper",
+		size: "30х21 cm",
+		image: "drawing/30.jpg",
+		bigImage: "drawing/big/30.jpg"
+	},
+	{
+		id: 76,
+		name: "Sketch",
+		category: "drawing",
+		avilability: "Sold",
+		type: "Ink,acrylic on stained cardboard",
+		size: "30х21 cm",
+		image: "drawing/30х21.jpg",
+		bigImage: "drawing/big/30х21.jpg"
+	},
+	{
+		id: 75,
+		name: "Sketch",
+		category: "drawing",
+		avilability: "Sold",
+		type: "Ink on stained cardboard",
+		size: "30х23 cm",
+		image: "drawing/30х23.jpg",
+		bigImage: "drawing/big/30х23.jpg"
+	},
+	{
+		id: 74,
+		name: "Sketch",
+		category: "drawing",
+		avilability: "Sold",
+		type: "Ink on stained cardboard",
+		size: "30x24 cm",
+		image: "drawing/IMG_3354.jpg",
+		bigImage: "drawing/big/IMG_3354.jpg"
+	},
+	{
+		id: 73,
+		name: "Drawing",
+		category: "drawing",
+		avilability: "in stock",
+		type: "Ink,acrylic on stained cardboard",
+		size: "30x23 cm",
+		image: "drawing/IMG_61800.jpg",
+		bigImage: "drawing/big/IMG_61800.jpg"
+	},
+	{
+		id: 72,
+		name: "Ink on paper",
+		category: "drawing",
+		avilability: "in stock",
+		type: "Ink on paper",
+		size: "30x21 cm",
+		image: "drawing/IMG_61890.jpg",
+		bigImage: "drawing/big/IMG_61890.jpg"
+	},
+	{
+		id: 71,
+		name: "Sitting",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "100x70 cm",
+		image: "nude/246.jpg",
+		bigImage: "nude/big/246.jpg"
+	},
+	{
+		id: 70,
+		name: "Expression",
+		category: "nude",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "100x75 cm",
+		image: "nude/251.jpg",
+		bigImage: "nude/big/251.jpg"
+	},
+	{
+		id: 69,
+		name: "New York",
+		category: "portrait",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "95x75 cm",
+		image: "portrait/95.jpg",
+		bigImage: "portrait/big/95.jpg"
+	},
+	{
+		id: 68,
+		name: "Frida",
+		category: "portrait",
+		avilability: "in stock",
+		type: "Oil, acrylic on canvas",
+		size: "95x75 cm",
+		image: "portrait/253а.jpg",
+		bigImage: "portrait/big/253а.jpg"
+	},
 	{
 		id: 67,
 		name: "Relaxation",
@@ -699,8 +923,8 @@ let items = [
 		avilability: "in stock",
 		type: "Oil, acrylic on canvas",
 		size: "100x70 cm",
-		image: "stil-life/247.jpg",
-		bigImage: "stil-life/big/247.jpg"
+		image: "stil-life/255.jpg",
+		bigImage: "stil-life/big/255.jpg"
 	}
 ]
 
